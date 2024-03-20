@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+
+.visuals{
+
+}
+
+.caverns{
+    background-image: url(./images/background/Caverns_background.jpg);
+}
+
+.box{
+    display: flex;
+    margin-top:20px;
+    margin-right:20%;
+    margin-left: 20%;
+    
+}
+
+.textbox{
+    border: 3px solid white;
+    color: white;
+    padding: 10px;
+}
+
+.textbox a{
+    color:white;
+}
+
+.stats{
+    padding: 10px;
+    background-color: black;
+    border: 3px solid white;
+    color:white
+}
+
+.stats h3, .stats h4{
+    text-align: center;
+}
+
