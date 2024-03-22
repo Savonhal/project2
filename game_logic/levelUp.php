@@ -31,7 +31,8 @@
             $_SESSION['player']['exp'] -= $levelUpThreshold;
             $_SESSION['player']['expThreshold'] = $levelUpThreshold;
             
-            echo "<p>You Leveled up from ".$prevLvl." to ".$_SESSION['player']['lvl']."</p>";
+            echo "<p>You Leveled up from ".$prevLvl." to ".$_SESSION['player']['lvl']."!</p>";
+            echo "<p>You've recovered your HP!</p>";
             echo "<p>Your Stats increased!</p>";
         }
 

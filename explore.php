@@ -64,7 +64,7 @@
                 echo"<p>You instinctively recoil, feeling the chill of its presence seeping into your bones.</p>";
                 echo"<p>Every fiber of your being is poised for action, muscles coiled tight as bowstrings, ready to either confront the otherworldly entity or slip past it like a shadow in the night.</p>";
                 echo"<p>You attempt cautiously navigate around it, avoiding its gaze.</p>";
-                echo"<a href='./events/beginnerEvent/specterBeginner.php'><p>Did you succeed?</p></a>";
+                echo"<a href='events/beginnerEvent/specterBeginner.php'><p>Did you succeed?</p></a>";
                 echo"<p></p>";
                 echo"<p></p>";
                 break;
@@ -75,7 +75,7 @@
                 echo"<img src='./images/enemy/kobold.jpg' style='width:200px;length:100px'alt='kobold picture'>";
                 echo"<p>Despite its diminutive stature, there is an undeniable menace to the kobold's presence, a primal aura that speaks of cunning and savagery honed through countless generations of survival in the harsh wilderness.</p>";
                 echo"<p>The kobold watches you with a mixture of defiance and hunger, its stance poised for attack as it waits for the first move to be made.</p>";
-                echo"<a href='./events/beginnerEvent/koboldBeginner.php'><p>You ready your weapon knowing that this encounter could turn deadly at any moment.</p></a>";
+                echo"<a href='events/beginnerEvent/koboldBeginner.php'><p>You ready your weapon knowing that this encounter could turn deadly at any moment.</p></a>";
                 echo"<p></p>";
                 echo"<p></p>";
                 break;
@@ -93,7 +93,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="textbox.css">
     <link rel="stylesheet" href="enemy.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
     <title>Exploring the Unknown</title>
+    <style>
+        h2{
+            font-family: 'Cardo';
+        }
+        p{
+            font-family: 'Crimson Text';
+        }
+    </style>
 </head>
 <body>
 <div class="box">

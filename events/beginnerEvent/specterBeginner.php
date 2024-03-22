@@ -1,7 +1,7 @@
 <?php 
     session_start();
 
-    require '../../game_logic/showStats.php';
+    require '../showStats2.php';
     require '../../game_logic/levelUp.php';
 
     $monster = [
@@ -11,7 +11,7 @@
         "atk" => 9,
         "def" => 7,
         "spd" => 9,
-        "monExp" => 200,
+        "monExp" => 50,
     ];
 
     //TODO Create battle sequence
@@ -25,7 +25,7 @@
         global $monster;
         if($winBattle){
             //echo the scenarion of battle and how the player defeated the monster.
-            echo"<p>You dance around the specter, dodging its spectral attacks and retaliating with strikes of your own. Each blow chips away at its ethereal form, driving it back with every swing of your sword.</p>";
+            echo"<p>You dance around the specter, dodging its fierce attacks and retaliating with strikes of your own. Each blow chips away at its ethereal form, driving it back with every swing of your sword.</p>";
             echo"<p>Finally, with a final, decisive blow, you deliver the finishing strike, your sword piercing through the specter's incorporeal body with a burst of blinding light. With a haunting wail, the specter dissipates into the ether.</p>";
             echo"<p>As the echoes of battle fade into silence, you stand victorious amidst the remnants of the spectral foe.</p>";
             echo"<p></p>";
@@ -64,17 +64,17 @@
         global $monster;
         echo"
         <div class='enemyStats tooltip'>
-                <img src='../../images/enemy/specter.jpg' style='width:200px;length:100px'alt='specter picture'>
+                <img class='enemyAnim'src='../../images/enemy/specter.jpg' style='width:200px;length:100px'alt='specter picture'>
                 <div class='right'>
                     <h2>".$monster['name']."</h2>
                     <h5>
                     'These ethereal entities manifest as twisted echoes of their former selves, their spectral forms flickering with an eerie luminescence that pierces the darkness like a beacon of otherworldly dread.'
                     </h5>
-                    <p>HP: ".$monster['hp']."/".$monster["maxHP"]."</p>
-                    <p>Attack:".$monster['atk']."</p>
-                    <p>Defense:".$monster['def']."</p>
-                    <p>Speed:".$monster['spd']."</p>
-                    <p>exp:".$monster['monExp']."</p>
+                    <p><img src='../../images/icons/hearts.png'>HP: ".$monster['hp']."/".$monster["maxHP"]."</p>
+                    <p><img src='../../images/icons/katana.png'>Attack:".$monster['atk']."</p>
+                    <p><img src='../../images/icons/shield.png'>Defense:".$monster['def']."</p>
+                    <p><img src='../../images/icons/sprint.png'>Speed:".$monster['spd']."</p>
+                    <p><img src='../../images/icons/medal-skull.png'>exp:".$monster['monExp']."</p>
                 </div>
             </div>
         ";
@@ -138,24 +138,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../textbox.css">
     <link rel="stylesheet" href="../../enemy.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
+    <title>Specter Encounter</title>
+    <style>
+        h2{
+            font-family: 'Cardo';
+        }
+        p{
+            font-family: 'Crimson Text';
+        }
+    </style>
 </head>
 <body>
     
     <div class="box">
         <div class="battleBox">
             <h3>Battle Log:</h3>
-           
-            
-                
-                
-            
             <?= battle();?>
         </div>
         <div class="textbox caverns">
+            <h2>Battle with the Specter</h2>
+            <h3>Battle Music:</h3>
+            <audio controls loop>
+                <source src="../../music/sento.mp3" type="audio/mpeg">
+            </audio>
+            
             <p>
                 The specter lets out a chilling wail, its unearthly voice reverberating through the air like a banshee's lament. 
-                Wisps of ethereal energy lash out at you, but you deflect them with your shield, the ancient metal groaning under the strain.
+                Wisps of ethereal energy lash out at you, but you deflect them with your shield.
             </p>
             <p>
                 With a defiant shout, you charge forward, your rusty sword held aloft and your battered shield raised in defense.

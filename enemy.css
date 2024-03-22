@@ -6,13 +6,13 @@
 
 .tooltip .right {
     min-width:200px; 
-    top:50%;
+    top:39%;
     left:100%;
     margin-left:20px;
     transform:translate(0, -50%);
     padding:10px 20px;
     color:white;
-    background-color:black;
+    
     font-weight:normal;
     font-size:13px;
     border-radius:8px;
@@ -48,4 +48,40 @@
     transform:translate(50%,-50%) rotate(-45deg);
     background-color:grey;
     box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
+.enemyStats .right p img, .enemyStats .right h2 img{
+    width:25px;
+    height:25px;
+    margin-right:5px;
+    margin-top:1px;
+}
+
+.enemyAnim{
+    animation:  bounce 5s infinite;;
+}
+
+.enemyAnim2{
+    animation: walk-animation 5s infinite;
+}
+
+/*For flying, floating enemies*/
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Start and end position, no translation */
+    }
+    50% {
+      transform: translateY(-15px); /* Bounce up */
+    }
+}
+
+/*For any enemy that walks*/
+@keyframes walk-animation {
+    0%, 100% {
+        transform: translateX(0px); 
+    }
+    50% {
+        transform: translateX(30px); 
+    }
+    
 }
