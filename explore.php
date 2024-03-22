@@ -1,17 +1,8 @@
 <?php
     session_start();
 
-    function showStats(){
-        echo"
-        <h3>Character Stats:</h3>
-        <h4>".$_SESSION['player']['name']."</h4>
-        <ul>
-            <li>Health Points (HP): ".$_SESSION['player']['hp'] . "</li>
-            <li>Strength:".$_SESSION['player']['atk'] ."</li>
-            <li>Strength:".$_SESSION['player']['def'] ."</li>
-            <li>Speed:".$_SESSION['player']['spd']."</li>
-        </ul>";
-    }
+    require 'game_logic/showStats.php';
+    
 
   
     function event(){
@@ -28,10 +19,10 @@
         switch($random_index){
             case 0:
                 echo"<p>You stumble upon a hidden cache of supplies, providing a brief respite from the encroaching darkness.</p>";
-                echo"<img src='./images/background/treasure_cache.jpg'>";
+                echo"<img src='./images/background/treasure_cache.jpg' style='width:200px;length:100px'>";
                 echo"<p>A sense of relief washes over you, infusing your weary frame with renewed vigor. Each morsel consumed grants you vitality, knitting wounds and fortifying your resolve.</p>";
                 echo"<p> Your muscles tense with newfound power, your movements honed with sharpened precision. </p>";
-                if(!$_SESSION['player']['hp'] === 100){
+                if(!$_SESSION['player']['hp'] === $_SESSION['player']['maxHP']){
                     $_SESSION['player']['hp'] += 30;
                     echo"<p>You've restored some health</p>";
                 }
@@ -44,12 +35,36 @@
                 echo"<p>You emerge from the cache, heart steeled and spirit ablaze, ready to confront the perils that await beyond.</p>";
                 break;
             case 1:
-                echo "<img src='./images/enemy/specter.jpg' style='width:200px;length:100px' alt='specter picture'>";
+                $monster = [
+                    "name" => "Specter",
+                    "hp" => 50,
+                    "maxHP" => 50,
+                    "atk" => 9,
+                    "def" => 7,
+                    "spd" => 9,
+                    "monExp" => 200,
+                ];            
+                echo"
+                <div class='enemyStats tooltip'>
+                        <img src='images/enemy/specter.jpg' style='width:200px;length:100px'alt='specter picture'>
+                        <div class='right'>
+                            <h2>".$monster['name']."</h2>
+                            <h5>
+                            'These ethereal entities manifest as twisted echoes of their former selves, their spectral forms flickering with an eerie luminescence that pierces the darkness like a beacon of otherworldly dread.'
+                            </h5>
+                            <p>HP: ".$monster['hp']."/".$monster["maxHP"]."</p>
+                            <p>Attack: ".$monster['atk']."</p>
+                            <p>Defense: ".$monster['def']."</p>
+                            <p>Speed: ".$monster['spd']."</p>
+                            <p>exp: ".$monster['monExp']."</p>
+                        </div>
+                    </div>
+                ";
                 echo"<p>A spectral apparition materializes before you, its eyes burning with an otherworldly fire.</p>";
                 echo"<p>You instinctively recoil, feeling the chill of its presence seeping into your bones.</p>";
                 echo"<p>Every fiber of your being is poised for action, muscles coiled tight as bowstrings, ready to either confront the otherworldly entity or slip past it like a shadow in the night.</p>";
                 echo"<p>You attempt cautiously navigate around it, avoiding its gaze.</p>";
-                echo"<a href='./events/specter.php'><p>Did you succeed?</p></a>";
+                echo"<a href='./events/beginnerEvent/specterBeginner.php'><p>Did you succeed?</p></a>";
                 echo"<p></p>";
                 echo"<p></p>";
                 break;
@@ -60,7 +75,7 @@
                 echo"<img src='./images/enemy/kobold.jpg' style='width:200px;length:100px'alt='kobold picture'>";
                 echo"<p>Despite its diminutive stature, there is an undeniable menace to the kobold's presence, a primal aura that speaks of cunning and savagery honed through countless generations of survival in the harsh wilderness.</p>";
                 echo"<p>The kobold watches you with a mixture of defiance and hunger, its stance poised for attack as it waits for the first move to be made.</p>";
-                echo"<a href='./events/kobold.php'><p>You ready your weapon knowing that this encounter could turn deadly at any moment.</p></a>";
+                echo"<a href='./events/beginnerEvent/koboldBeginner.php'><p>You ready your weapon knowing that this encounter could turn deadly at any moment.</p></a>";
                 echo"<p></p>";
                 echo"<p></p>";
                 break;
@@ -77,13 +92,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="textbox.css">
+    <link rel="stylesheet" href="enemy.css">
     <title>Exploring the Unknown</title>
 </head>
 <body>
 <div class="box">
-        <h2>Exploring the Unknown</h2>
-        
         <div class="textbox">
+            <h2>Exploring the Unknown</h2>
             <?= event() ?>
         </div>
         <div class="stats">

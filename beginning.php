@@ -1,30 +1,19 @@
 <?php
     session_start();
-    
 
-    function createCharacter($name){
-        $_SESSION['player']['name'] = $name;
-        $_SESSION['player']['hp'] = 100;
-        $_SESSION['player']['atk'] = rand(5,15);
-        $_SESSION['player']['def'] = rand(5,15);
-        $_SESSION['player']['spd'] = rand(5,15);
-    }
-
-    function showStats(){
-        echo"
-        <h3>Character Stats:</h3>
-        <h4>".$_SESSION['player']['name']."</h4>
-        <ul>
-            <li>Health Points (HP): ".$_SESSION['player']['hp'] . "</li>
-            <li>Strength:".$_SESSION['player']['atk'] ."</li>
-            <li>Strength:".$_SESSION['player']['def'] ."</li>
-            <li>Speed:".$_SESSION['player']['spd']."</li>
-        </ul>";
-    }
+    require 'game_logic/createCharacter.php';
+    require 'game_logic/showStats.php';
     
-    if(!isset($_SESSION['player'])){
+    //Creates a new character
+    //If previous player did not die or win, then they will lose all previous progress and start anew
+    createCharacter($_GET['name']);
+
+    /*
+    if(!isset($_SESSION['player']) && $_GET['name'] !=$_SESSION['player']['name']){
         createCharacter($_GET['name']);
     }
+    */
+    
 
 
 ?>
@@ -38,7 +27,7 @@
 </head>
 <body>
     <div class="visuals">
-
+    
     </div>
     <div class="box">
         <div class="textbox caverns">
@@ -52,12 +41,12 @@
             <p>What will you do in this forsaken place?</p>
             <ul>
                 <li><a href="explore.php">Explore the unknown</a></li>
-                <li><a href="fight.php">Confront the darkness</a></li>
-                <li><a href="rest.php">Seek solace in solitude</a></li>
+                <!-- <li><a href="rest.php">Seek solace in solitude</a></li> -->
             </ul>
+          
         </div>
         <div class="stats">
-            <?= showStats() ?>
+            <?= showStats(); ?>
         </div>
     </div>
    

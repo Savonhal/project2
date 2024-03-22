@@ -13,15 +13,32 @@ body{
 .box{
     display: flex;
     margin-top:20px;
-    margin-right:20%;
-    margin-left: 20%;
+    margin-right:10%;
+    margin-left: 10%;
+    max-height: 50%;
+}
+
+.battleBox{
+    color:white;
+    background-color: black;
+    overflow-y: auto;
+    padding: 10px;
+    border: 3px solid white;
+    width:45%;
+    height:100%;
+}
+
+.battleBox p{
     
+    color:white;
 }
 
 .textbox{
     border: 3px solid white;
     color: white;
     padding: 10px;
+    width: 500px;
+    word-wrap: break-word;
 }
 
 .textbox a{
@@ -32,7 +49,8 @@ body{
     padding: 10px;
     background-color: black;
     border: 3px solid white;
-    color:white
+    color:white;
+    width: 20%;
 }
 
 .stats h3, .stats h4{
