@@ -7,9 +7,9 @@
         <p>LVL: ".$_SESSION['player']['lvl']."</p>
         <p>EXP: ".round($_SESSION['player']['exp'])."/".round($_SESSION['player']['expThreshold'])."</p>
         <p><img src='../../images/icons/hearts.png'> HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP'] ."</p>
-        <p><img src='../../images/icons/katana.png'> Attack:".$_SESSION['player']['atk'] ."</p>
-        <p><img src='../../images/icons/shield.png'>Defense:".$_SESSION['player']['def'] ."</p>
-        <p><img src='../../images/icons/sprint.png'>Speed:".$_SESSION['player']['spd']."</p>";
+        <p><img src='../../images/icons/katana.png'> Attack: ".$_SESSION['player']['atk'] ."</p>
+        <p><img src='../../images/icons/shield.png'>Defense: ".$_SESSION['player']['def'] ."</p>
+        <p><img src='../../images/icons/sprint.png'>Speed: ".$_SESSION['player']['spd']."</p>";
     }
 
 ?>

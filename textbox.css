@@ -12,12 +12,19 @@ body{
     background-position: right-top;
 }
 
+.forest3{
+    background-image: url(./images/background/Forest_background3.png);
+    background-repeat: no-repeat;
+    background-position: right-top;
+}
+
 .box{
     display: flex;
     margin-top:20px;
     margin-right:10%;
     margin-left: 10%;
     max-height: 50%;
+    overflow-y: auto;
 }
 
 .battleBox{
@@ -27,12 +34,15 @@ body{
     padding: 10px;
     border: 3px solid white;
     width:45%;
-    height: 500px;
+    height: 600px;
 }
 
 .battleBox p{
-    
     color:white;
+}
+
+.battleBox h3{
+    margin-top: 50px;
 }
 
 .textbox{
@@ -40,7 +50,9 @@ body{
     color: white;
     padding: 10px;
     width: 500px;
+    height: 600px;
     word-wrap: break-word;
+    overflow-y: auto;
 }
 
 .textbox a{
@@ -53,9 +65,10 @@ body{
     border: 3px solid white;
     color:white;
     width: 20%;
+    height: 600px;
 }
 
-.stats img{
+.stats p img{
     width:25px;
     height:25px;
     margin-right:5px;

@@ -5,13 +5,13 @@
     require '../../game_logic/levelUp.php';
 
     $monster = [
-        "name" => "Specter",
-        "hp" => 50,
-        "maxHP" => 50,
-        "atk" => 9,
-        "def" => 7,
-        "spd" => 9,
-        "monExp" => 50,
+        "name" => "Troll",
+        "hp" => 150,
+        "maxHP" => 150,
+        "atk" => 50,
+        "def" => 25,
+        "spd" => 2,
+        "monExp" => 200,
     ];
 
     //TODO Create battle sequence
@@ -25,29 +25,29 @@
         global $monster;
         if($winBattle){
             //echo the scenarion of battle and how the player defeated the monster.
-            echo"<p>You dance around the specter, dodging its fierce attacks and retaliating with strikes of your own. Each blow chips away at its ethereal form, driving it back with every swing of your sword.</p>";
-            echo"<p>Finally, with a final, decisive blow, you deliver the finishing strike, your sword piercing through the specter's incorporeal body with a burst of blinding light. With a haunting wail, the specter dissipates into the ether.</p>";
-            echo"<p>As the echoes of battle fade into silence, you stand victorious amidst the remnants of the spectral foe.</p>";
+            echo"<p>You dance around its attacks, using your agility to outmaneuver the lumbering beast while delivering precise strikes to its vulnerable points.</p>";
+            echo"<p>With each exchange, the troll's strength begins to wane, its movements growing sluggish from the relentless assault. Sensing an opening, you unleash a flurry of strikes, each blow driving the creature closer to defeat.</p>";
+            echo"<p>Finally, with a mighty swing of your sword, you deliver the decisive blow, cleaving through the troll's thick neck with a resounding crack. With a deafening roar, the creature collapses to the ground, defeated at last.</p>";
             echo"<p></p>";
-
+            echo"<p></p>";
             levelUp($monster['monExp']);
 
 
             //echo where the player can go next
             echo"
                 <ul>
-                    <li><a href='explore.php'>Continue</a></li>
-                    <li><a href='rest.php'>Seek solace in solitude</a></li>
+                    <li><a href='explore.php'>Continue the fight</a></li>
                 </ul>
             ";
         }else{
             //echo a description of how player was defeated/dead here
             echo"<p>
-                Despite your best efforts to evade, you find yourself overwhelmed by the relentless onslaught, your shield buckling under the force of the spectral attacks.
-                With each passing moment, your strength begins to wane, your movements growing sluggish as exhaustion takes its toll. The specter presses its advantage, its attacks growing more ferocious with every passing moment.
-                Desperation sets in as you realize the futility of your efforts.
-                With a final, bone-chilling wail, the specter unleashes a devastating attack, its ghostly energy engulfing you in a blinding maelstrom of pain and despair.
-                You have died...
+                Despite your best efforts, the troll proves to be an unrelenting foe, its massive strength and resilience overwhelming your defenses. 
+                With each thunderous blow, you feel your strength waning, your body battered and bruised from the relentless assault.
+                The troll's fury knows no bounds, its relentless onslaught driving you to the brink of exhaustion.
+                With a final, bone-crushing blow, the troll delivers the decisive strike, sending you sprawling to the ground in defeat. 
+                As darkness closes in around you, you can only watch helplessly as the troll looms over you, its victorious roar echoing in the desolate wilderness.
+                You've died..
             </p>";
             echo"
                 <ul>
@@ -64,11 +64,12 @@
         global $monster;
         echo"
         <div class='enemyStats tooltip'>
-                <img class='enemyAnim'src='../../images/enemy/specter.jpg' style='width:200px;length:100px'alt='specter picture'>
+                <img class='enemyAnim4' src='../../images/enemy/troll.jpg' style='width:200px;length:100px'alt='kobold picture'>
                 <div class='right'>
                     <h2>".$monster['name']."</h2>
                     <h5>
-                    'These ethereal entities manifest as twisted echoes of their former selves, their spectral forms flickering with an eerie luminescence that pierces the darkness like a beacon of otherworldly dread.'
+                        With skin as tough as stone and muscles like coiled steel, trolls possess a resilience that belies their brutish appearance. 
+                        Their bodies, adorned with grotesque boils and scars, bear testament to the countless battles they have waged throughout the ages, each scar a mark of their indomitable strength and tenacity.
                     </h5>
                     <p><img src='../../images/icons/hearts.png'>HP: ".$monster['hp']."/".$monster["maxHP"]."</p>
                     <p><img src='../../images/icons/katana.png'>Attack:".$monster['atk']."</p>
@@ -141,7 +142,7 @@
     <link rel="stylesheet" href="../../enemy.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
-    <title>Specter Encounter</title>
+    <title>Troll Encounter</title>
     <style>
         h2{
             font-family: 'Cardo';
@@ -155,25 +156,41 @@
     
     <div class="box">
         <div class="battleBox">
+            <br>
             <h3>Encounter :</h3>
             <?= battle();?>
         </div>
-        <div class="textbox caverns">
-            <h2>Battle with the Specter</h2>
+        <div class="textbox forest3">
+            <h2>Battle & Encounter with the Troll</h2>
+            <h4>
+                "While trolls are often depicted as brutish and aggressive, they possess a depth of cunning and instinct honed by eons of existence in the untamed wilderness. 
+                Masters of their domain, trolls roam the rugged terrain of Termina with a silent, watchful vigilance, their presence serving as a warning to those who would dare challenge their authority."
+            </h4>
             <h3>Battle Music:</h3>
             <audio controls loop>
                 <source src="../../music/sento.mp3" type="audio/mpeg">
             </audio>
             
             <p>
-                The specter lets out a chilling wail, its unearthly voice reverberating through the air like a banshee's lament. 
-                Wisps of ethereal energy lash out at you, but you deflect them with your shield.
+                As Pog and the player step out of the cache, they are suddenly startled by a deep, rumbling growl echoing from the shadows. 
+                Emerging from the darkness comes a towering figure, its massive frame casting a long shadow over the barren landscape. 
+                With each heavy footfall, the ground trembles beneath its weight, announcing the arrival of a fearsome troll..
             </p>
             <p>
-                With a defiant shout, you charge forward, your rusty sword held aloft and your battered shield raised in defense.
-                With a swift strike of your sword, you lunge at the specter, your blade cutting through the ghostly form with a satisfying hiss.
-                The specter recoils, its translucent body flickering with agitation as it lashes out with renewed fury.
+                The troll's skin is a sickly shade of blue, marred by grotesque boils and scars from countless battles past. 
+                Its eyes gleam with a primal intelligence, glinting with malice as it fixes its gaze upon Pog and the player.
             </p>
+            <p>
+                Pog quips, "Well, ain't you a sight for sore eyes! Looks like someone's been playin' with fire and got burned a few too many times!" 
+                The troll's expression darkens at Pog's mockery, its temper flaring as it readies itself for combat.
+                "That there's a troll, mate. Big, dumb, and not too bright, but don't let that fool ya. They're tough as nails and meaner than a sack of rabid wolves. Best watch your back around this one."
+            </p>
+            <p>
+                As the troll charges forward with a thunderous roar, you stand your ground, your sword and shield at the ready. 
+                With lightning reflexes, you dodge its swinging club and retaliate with a swift strike, your blade finding purchase in its thick, gnarled hide.
+                The troll bellows in pain, but it is undeterred, launching a barrage of heavy blows in retaliation.
+            </p>
+            
             <?= outcome();?>
             
           

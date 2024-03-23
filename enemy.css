@@ -8,7 +8,7 @@
     min-width:200px; 
     top:39%;
     left:100%;
-    margin-left:20px;
+    margin-left:5px;
     transform:translate(0, -50%);
     padding:10px 20px;
     color:white;
@@ -57,15 +57,35 @@
     margin-top:1px;
 }
 
+.enemyStats .right h2{
+    margin-bottom: -20px;
+}
+
+/*Animations for Enemies*/
+
+/*For flying, floating enemies*/
 .enemyAnim{
     animation:  bounce 5s infinite;;
 }
 
+/*For any enemy that walks*/
 .enemyAnim2{
     animation: walk-animation 5s infinite;
 }
+/*For fast enemies*/
 
-/*For flying, floating enemies*/
+.enemyAnim3{
+    animation: jump-shaking 1s infinite;
+}
+
+/*For slow enemies*/
+.enemyAnim4{
+    animation: jump-shaking 10s infinite;
+}
+
+
+
+
 @keyframes bounce {
     0%, 100% {
       transform: translateY(0); /* Start and end position, no translation */
@@ -75,7 +95,7 @@
     }
 }
 
-/*For any enemy that walks*/
+
 @keyframes walk-animation {
     0%, 100% {
         transform: translateX(0px); 
@@ -84,4 +104,15 @@
         transform: translateX(30px); 
     }
     
+}
+
+
+@keyframes jump-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateY(-9px) }
+    35% { transform: translateY(-9px) rotate(10deg) }
+    55% { transform: translateY(-9px) rotate(-10deg) }
+    65% { transform: translateY(-9px) rotate(10deg) }
+    75% { transform: translateY(-9px) rotate(-10deg) }
+    100% { transform: translateY(0) rotate(0); }
 }
