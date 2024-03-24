@@ -136,7 +136,7 @@
                 echo "<p>With a hearty chuckle, Pog gestures towards the mountain range looming in the distance. 'Now, let's get a move on, shall we? Them dragons ain't gonna fight themselves, and I've got a reputation to maintain as the best darn pot this side of the divine Draconian Peaks!'</p>";
                 
                 echo"<a href='events/beginnerEvent/dragonBeginner.php'>
-                        <p>With a hearty chuckle, Pog gestures towards the mountain range looming in the distance. 'Now, let's get a move on, shall we? Them dragons ain't gonna fight themselves, and I've got a reputation to maintain as the best darn pot this side of the divine Draconian Peaks!'</p>
+                        <p>With a hearty chuckle, Pog gestures towards the mountain range looming in the distance. 'Now, let's get a move on, shall we? Them dragons ain't gonna fight themselves, and I've got a reputation to maintain as the best darn pot this side of the Divine Draconian Peaks!'</p>
                     </a>";
                 break;
             case 1:

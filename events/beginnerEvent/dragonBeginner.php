@@ -8,8 +8,8 @@
         "name" => "Troll",
         "hp" => 150,
         "maxHP" => 150,
-        "atk" => 50,
-        "def" => 25,
+        "atk" => 45,
+        "def" => 45,
         "spd" => 2,
         "monExp" => 200,
     ];
@@ -36,7 +36,7 @@
             //echo where the player can go next
             echo"
                 <ul>
-                    <li><a href='explore.php'>Continue the fight</a></li>
+                    <li><a href='../place/dragonRoute1.php'>Continue the fight</a></li>
                 </ul>
             ";
         }else{
@@ -49,9 +49,10 @@
                 As darkness closes in around you, you can only watch helplessly as the troll looms over you, its victorious roar echoing in the desolate wilderness.
                 You've died..
             </p>";
+            echo"<img src='../../images/player/grave.jpg'>";
             echo"
                 <ul>
-                    <li><a href='index.html'>Create a new Character?</a></li>
+                    <li><a href='../../index.php'>Create a new Character?</a></li>
                 </ul>
             ";
         }
@@ -140,6 +141,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../textbox.css">
     <link rel="stylesheet" href="../../enemy.css">
+    <link rel="stylesheet" href="../../encountersAnimation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
     <title>Troll Encounter</title>
@@ -197,6 +199,15 @@
         </div>
         <div class="stats">
             <?= showStats(); ?>
+            <div class='enemyStats tooltip'>
+                <img class='enemyAnim3' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;length:50px'alt='kobold picture'>
+                <div class='bottom'>
+                    <h2>Pog</h2>
+                    <h5>"A mysterious talking pot. He's guiding you to the Divine Dragonic Peaks but for what purpose?"</h5>
+                    <p>"You're not scared of that big lug, are ya? C'mon, show him what you're made of!"</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>

@@ -36,18 +36,31 @@
     </style>
 </head>
 <body>
-    <div class="visuals">
-    
-    </div>
     <div class="box">
-        <div class="textbox caverns">
+        <div class="battleBox">
+            <h3>Encounter :</h3>
+            <img src='images/player/sword.jpg' style="width:200px;height:150px">
+            <img src='images/player/shield.jpg' style="width:200px;height:150px">
+        </div>
+        <div class="textbox forest3">
+            <h2>Termina: The Beginning</h2>
+            <h3>Intro Music:</h3>
+            <audio controls loop>
+                    <source src="music/akaifuusen.mp3" type="audio/mpeg">
+            </audio>
             <p>
                 In the desolate realm of Termina, you awaken to a world shrouded in darkness. Your memories are but fragmented whispers, lost amidst the echoing void that surrounds you.
-                Desolation stretches out as far as the eye can see, a landscape marred by twisted shadows and jagged silhouettes clawing at the edges of your vision. Barren and lifeless, the land lies beneath an indifferent sky, its soil cracked and parched from ages of neglect.
+                Desolation stretches out as far as the eye can see, a landscape marred by twisted shadows and jagged silhouettes clawing at the edges of your vision. 
+            </p>
+            <p>
+                Barren and lifeless, the land lies beneath an indifferent sky, its soil cracked and parched from ages of neglect.
                 A sense of dread coils within the pit of your stomach, its venomous whispers echoing through the recesses of your mind. You stand alone amidst the desolation, adrift in a sea of darkness and uncertainty, with no beacon to guide your way through the encroaching shadows.
                 Instinctively, your fingers find purchase upon the worn hilt of a rusty sword and the battered surface of a weather-beaten shield. Though time has weathered these implements, they remain steadfast companions in this forsaken land.
+            </p>
+            <p>
                 With these humble tools in hand, you stand ready to face the challenges that lie ahead. Your grip is firm, your resolve unyielding. Despite the odds stacked against you, you are determined to carve a path through the shadows, one swing of your sword and one deft parry of your shield at a time.
                 In this forsaken place, what will you choose to do? 
+            
             </p>
             <ul>
                 <li><a href="explore.php">Explore the unknown</a></li>

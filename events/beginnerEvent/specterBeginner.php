@@ -49,9 +49,10 @@
                 With a final, bone-chilling wail, the specter unleashes a devastating attack, its ghostly energy engulfing you in a blinding maelstrom of pain and despair.
                 You have died...
             </p>";
+            echo"<img src='../../images/player/grave.jpg'>";
             echo"
                 <ul>
-                    <li><a href='index.html'>Create a new Character?</a></li>
+                li><a href='../../index.php'>Create a new Character?</a></li>
                 </ul>
             ";
         }

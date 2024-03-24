@@ -49,9 +49,10 @@
                 As darkness envelops your vision, you hear the triumphant growl of the kobold echoing in the distance. 
                 You have died...
             </p>";
+            echo"<img src='../../images/player/grave.jpg'>";
             echo"
                 <ul>
-                    <li><a href='index.html'>Create a new Character?</a></li>
+                li><a href='../../index.php'>Create a new Character?</a></li>
                 </ul>
             ";
         }

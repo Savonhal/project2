@@ -9,3 +9,7 @@
 .pog{
     animation: tilt-shaking 1s infinite;
 }
+
+.pogSerious{
+    animation: tilt-shaking 3s infinite;
+}
