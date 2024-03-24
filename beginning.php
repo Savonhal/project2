@@ -23,6 +23,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="textbox.css">
+    <link rel="stylesheet" href="enemy.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
     <title>The Beginning</title>
@@ -36,16 +37,19 @@
     </style>
 </head>
 <body>
+    <div class="termina">
+        <h1>Termina's Lament</h1>
+    </div>
     <div class="box">
         <div class="battleBox">
             <h3>Encounter :</h3>
-            <img src='images/player/sword.jpg' style="width:200px;height:150px">
-            <img src='images/player/shield.jpg' style="width:200px;height:150px">
+            <img class="enemyAnim"src='images/player/sword.jpg' style="width:200px;height:150px">
+            <img class="enemyAnim1"src='images/player/shield.jpg' style="width:200px;height:150px">
         </div>
         <div class="textbox forest3">
             <h2>Termina: The Beginning</h2>
             <h3>Intro Music:</h3>
-            <audio controls loop>
+            <audio controls loop autoplay>
                     <source src="music/akaifuusen.mp3" type="audio/mpeg">
             </audio>
             <p>

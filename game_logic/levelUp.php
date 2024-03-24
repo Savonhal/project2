@@ -23,9 +23,9 @@
             $prevLvl = $_SESSION['player']['lvl'];
             $_SESSION['player']['lvl']++;
             
-            //increase stats and restore hp on level up
+            //increase stats and restore hp(40%) on level up
             $_SESSION['player']['maxHP'] += $baseMaxHPIncrease;
-            $_SESSION['player']['hp'] = $_SESSION['player']['maxHP'];
+            $_SESSION['player']['hp'] = $_SESSION['player']['maxHP'] * .4;
             $_SESSION['player']['atk'] += $baseAtkIncrease;
             $_SESSION['player']['def'] += $baseDefIncrease;
             $_SESSION['player']['spd'] += $baseSpdIncrease;

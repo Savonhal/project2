@@ -12,7 +12,7 @@
     transform:translate(0, -50%);
     padding:10px 20px;
     color:white;
-    
+    background: rgba(0, 0, 0, 0.5);
     font-weight:normal;
     font-size:13px;
     border-radius:8px;
@@ -66,6 +66,11 @@
 /*For flying, floating enemies*/
 .enemyAnim{
     animation:  bounce 5s infinite;;
+}
+
+/*Slower Variation of enemyAnim*/
+.enemyAnim1{
+    animation:  bounce 6s infinite;;
 }
 
 /*For any enemy that walks*/

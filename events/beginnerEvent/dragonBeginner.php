@@ -155,7 +155,9 @@
     </style>
 </head>
 <body>
-    
+    <div class="termina">
+        <h1>Termina's Lament</h1>
+    </div>
     <div class="box">
         <div class="battleBox">
             <br>
@@ -165,11 +167,11 @@
         <div class="textbox forest3">
             <h2>Battle & Encounter with the Troll</h2>
             <h4>
-                "While trolls are often depicted as brutish and aggressive, they possess a depth of cunning and instinct honed by eons of existence in the untamed wilderness. 
+                "While trolls are often depicted as brutish and aggressive, they possess a surprising depth of instincts honed by eons of existence in the untamed wilderness. 
                 Masters of their domain, trolls roam the rugged terrain of Termina with a silent, watchful vigilance, their presence serving as a warning to those who would dare challenge their authority."
             </h4>
             <h3>Battle Music:</h3>
-            <audio controls loop>
+            <audio controls loop autoplay>
                 <source src="../../music/sento.mp3" type="audio/mpeg">
             </audio>
             

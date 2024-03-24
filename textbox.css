@@ -2,8 +2,23 @@ body{
     background-color: black;
 }
 
-.visuals{
+.termina{
+    color:white;
+    text-align: center;
+}
 
+.intro{
+    text-align: justify;
+}
+
+.leaderBoard{
+    border: 3px solid white;
+    color: white;
+    padding: 10px;
+    width: 350px;
+    height: 600px;
+    word-wrap: break-word;
+    overflow-y: auto;
 }
 
 .caverns{
@@ -123,6 +138,13 @@ body{
     width:24px;
     height:12px;
     overflow:hidden;
+}
+
+.tooltip .bottom p img{
+    width:25px;
+    height:25px;
+    margin-right:5px;
+    margin-top:1px;
 }
 
 .tooltip .bottom i::after {

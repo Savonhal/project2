@@ -153,7 +153,9 @@
     </style>
 </head>
 <body>
-    
+    <div class="termina">
+        <h1>Termina's Lament</h1>
+    </div>
     <div class="box">
         <div class="battleBox">
             <h3>Encounter :</h3>
@@ -162,7 +164,7 @@
         <div class="textbox caverns">
             <h2>Battle with the Specter</h2>
             <h3>Battle Music:</h3>
-            <audio controls loop>
+            <audio controls loop autoplay>
                 <source src="../../music/sento.mp3" type="audio/mpeg">
             </audio>
             

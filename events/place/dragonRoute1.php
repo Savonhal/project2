@@ -29,7 +29,9 @@
     </style>
 </head>
 <body>
-    
+    <div class="termina">
+        <h1>Termina's Lament</h1>
+    </div>
     <div class="box">
         <div class="battleBox">
             <h3>The Dragon's Silhouette :</h3>
@@ -53,10 +55,10 @@
             <h4>
                "The Draconian Woodlands are home to a myriad of flora and fauna, each species intricately woven into the tapestry of life that thrives within its depths.
                 Towering trees reach towards the sky, their gnarled branches forming a labyrinthine canopy that stretches as far as the eye can see.
-                But beneath the tranquil facade of the forest lies a realm of hidden dangers and ancient mysteries. "
+                But beneath the tranquil facade of the forest lies a realm of hidden dangers and ancient mysteries."
             </h4>
             <h3>Music:</h3>
-            <audio controls loop>
+            <audio controls loop autoplay>
                 <source src="../../music/yume.mp3" type="audio/mpeg">
             </audio>
             <p>

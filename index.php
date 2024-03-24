@@ -65,11 +65,10 @@
                     <li>Speed: Determines who will go first every turn in battle.</li>
                 </ul>
                 <h1>What are the outcomes of the game?</h1>
-                <p>The game has basically three routes each which is randomized when you start the game. You can refresh the explore.php page if you want to change your route.</p>
+                <p>The game has basically two routes (general stories) each which is randomized when you start the game. You can refresh the explore.php page if you want to change your route.</p>
                 <h2>Routes</h2>
                 <ul>
                     <li>Adventure to Divine Draconian Peaks(Encounter with Pog and the treasure cache)</li>
-                    <li>Wrath of the Norse Gods (Encounter with Kobold)</li>
                     <li>The Otherside of Termina (Encounter with Specter) </li>
                 </ul>
             </div>

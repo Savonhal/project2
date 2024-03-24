@@ -6,11 +6,11 @@
 
     $monster = [
         "name" => "Kobold",
-        "hp" => 50,
-        "maxHP" => 50,
-        "atk" => 8,
+        "hp" => 60,
+        "maxHP" => 60,
+        "atk" => 10,
         "def" => 5,
-        "spd" => 13,
+        "spd" => 25,
         "monExp" => 100,
     ];
 
@@ -154,7 +154,9 @@
     </style>
 </head>
 <body>
-    
+    <div class="termina">
+        <h1>Termina's Lament</h1>
+    </div>
     <div class="box">
         <div class="battleBox">
             <h3>Encounter :</h3>
@@ -163,7 +165,7 @@
         <div class="textbox forest3">
             <h2>Battle with the Kobold</h2>
             <h3>Battle Music:</h3>
-            <audio controls loop>
+            <audio controls loop autoplay>
                 <source src="../../music/sento.mp3" type="audio/mpeg">
             </audio>
     
@@ -182,6 +184,14 @@
         </div>
         <div class="stats">
             <?= showStats(); ?>
+            <div class='enemyStats tooltip'>
+                <img class='enemyAnim3' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;length:50px'alt='pog picture'>
+                <div class='bottom'>
+                    <h2>Pog</h2>
+                    <h5>"A mysterious talking pot. He's guiding you to the Divine Dragonic Peaks but for what purpose?"</h5>
+                    <p>"Looks like he's tiring out! Keep pressin' the attack!"</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
