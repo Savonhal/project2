@@ -1,4 +1,5 @@
 <?php 
+    //left side of dragonRoute1 outcome
     session_start();
 
     require '../showStats2.php';
@@ -25,31 +26,30 @@
         global $monster;
         if($winBattle){
             //echo the scenarion of battle and how the player defeated the monster.
-            echo"<p>But you refuse to yield, your determination fueling your every move. With each clash of steel and claw, you press forward, gradually gaining ground against your elusive foe.</p>";
-            echo"<p>As the battle rages on, the kobold's ferocity begins to wane, its movements growing sluggish with fatigue. Sensing an opportunity, you unleash a flurry of attacks, driving the kobold back with relentless precision.</p>";
-            echo"<p>With a defeated growl, the kobold slumps to the ground, defeated but not forgotten in the annals of Termina's history.</p>";
-            echo"<p>However the moment of victory is short-lived as you find yourself being slowly surronded by two other kobolds.</p>";
-            echo"<p></p>";
+            echo"<p>But you refuse to yield, your determination fueling your every move. With each clash of steel, you press forward, gradually gaining ground against your elusive foes.</p>";
+            echo"<p>With each swing of your weapon and deft maneuver, you gradually gain the upper hand, forcing the kobolds onto the defensive.</p>";
+            echo"<p>With a final, decisive strike, you incapacitate one of the kobolds, leaving it sprawled on the forest floor, defeated. The remaining kobold, seeing its companion defeated, lets out a panicked yelp and flees into the shadows, disappearing into the depths of the forest.</p>";
+            echo"<p>Pog cheers triumphantly, clapping you on the back with a grin. \"Well done, mate! That's how you handle a couple of pesky kobolds! They won't be botherin' us again anytime soon, that's for sure!\"</p>";
             levelUp($monster['monExp']);
-
+            levelUp($monster['monExp']);
 
             //echo where the player can go next
             echo"
                 <ul>
-                    <li><a href='explore.php'>Continue the fight</a></li>
+                    <li><a href='../place/dragonRoute2_1.php'>Continue exploring.</a></li>
                 </ul>
             ";
         }else{
             //echo a description of how player was defeated/dead here
             echo"<p>
-                Before you can react, the kobold retaliates, its claws slashing through the air with razor-sharp precision. 
+                With coordinated strikes and relentless aggression, the kobolds overwhelm you, leaving you battered and bruised on the forest floor.
                 You attempt to raise your shield in defense, but the blow comes too fast, striking you squarely in the chest and knocking you off balance.
-                Despite your best efforts, you find yourself unable to keep up with the creature's lightning-fast movements.
-                With a final, decisive blow, the kobold's claws find their mark, piercing through your defenses and delivering a devastating strike.
-                As darkness envelops your vision, you hear the triumphant growl of the kobold echoing in the distance. 
+                Despite your best efforts, you find yourself unable to keep up with the their lightning-fast movements.
+                With a final, decisive blow, their swords find their mark, piercing through your defenses and delivering a devastating strike.
+                As darkness envelops your vision, you hear their triumphant howls echoing in the distance. 
                 You have died...
             </p>";
-            echo"<img src='../../images/player/grave.jpg'>";
+            echo"<img style='width:200px;length:100px' src='../../images/player/grave.jpg'>";
             echo"
                 <ul>
                 li><a href='../../index.php'>Create a new Character?</a></li>
@@ -78,6 +78,7 @@
                     <p><img src='../../images/icons/sprint.png'>Speed:".$monster['spd']."</p>
                     <p><img src='../../images/icons/medal-skull.png'>exp:".$monster['monExp']."</p>
                 </div>
+                <img class='enemyAnim3_2' src='../../images/enemy/kobold.jpg' style='width:200px;length:100px'alt='kobold picture'>
             </div>
         ";
         echo"<h3> Battle Log: </h3>";
@@ -90,17 +91,21 @@
                 //Player attacks monster first
                 
                 $playerDMG = round(($_SESSION['player']['atk'] + rand(1, 6)) * (100/(100+$monster['def'])) ,0);
-                $monster['hp'] -= $playerDMG;
+                $monster['hp'] -= round($playerDMG);
                 echo "<p>".$_SESSION['player']['name']." attacks ".$monster['name']." for ".$playerDMG.". ".$monster['name']." HP: ".$monster['hp']."/".$monster['maxHP']."\n</p>";
                 if($monster['hp'] <= 0){
                     $winBattle = true;
-                    echo "<p>The ".$monster['name']." has died!\n</p>";
+                    echo "<p>One of the ".$monster['name']."s have died!\n</p>";
+                    echo "<p>The other".$monster['name']." scampers away yelping!</p>";
                     break;
                 }
                 
                 $monDMG = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
-                $_SESSION['player']['hp'] -= $monDMG;
+                $_SESSION['player']['hp'] -= round($monDMG);
                 echo "<p>".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
+                $monDMG2 = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
+                $_SESSION['player']['hp'] -= round($monDMG2);
+                echo "<p>The second ".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG2.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
                 if($_SESSION['player']['hp'] <= 0){
                     $winBattle = false;
                     echo "<p>You've died..</p>";
@@ -110,8 +115,11 @@
             }else if($monsterRoll > $userRoll){
                 //Monster attacks first
                 $monDMG = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
-                $_SESSION['player']['hp'] -= $monDMG;
+                $_SESSION['player']['hp'] -= round($monDMG);
                 echo "<p>".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
+                $monDMG2 = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
+                $_SESSION['player']['hp'] -= round($monDMG2);
+                echo "<p>The second ".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG2.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
                 if($_SESSION['player']['hp'] <= 0){
                     $winBattle = false;
                     echo "<p>You've died..\n</p>";
@@ -119,7 +127,7 @@
                 }
                 
                 $playerDMG = round(($_SESSION['player']['atk'] + rand(1, 6)) * (100/(100+$monster['def'])) ,0);
-                $monster['hp'] -= $playerDMG;
+                $monster['hp'] -= round($playerDMG);
                 echo "<p>".$_SESSION['player']['name']." attacks ".$monster['name']." for ".$playerDMG.". ".$monster['name']." HP: ".$monster['hp']."/".$monster['maxHP']."\n</p>";
                 if($monster['hp'] <= 0){
                     $winBattle = true;
@@ -141,6 +149,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../textbox.css">
     <link rel="stylesheet" href="../../enemy.css">
+    <link rel="stylesheet" href="../../encountersAnimation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
     <title>Kobold Encounter</title>
@@ -162,7 +171,7 @@
             <h3>Encounter :</h3>
             <?= battle();?>
         </div>
-        <div class="textbox forest3">
+        <div class="textbox thicket">
             <h2>Battle with the Kobold</h2>
             <h3>Battle Music:</h3>
             <audio controls loop autoplay>
@@ -170,13 +179,13 @@
             </audio>
     
             <p>
-                The air crackles with tension as the two adversaries size each other up, each anticipating the other's next move.
-                With a sudden burst of speed, the kobold lunges forward, its sword slashing through the air with razor-sharp precision. 
-                You react instinctively, parrying the attack with your shield and countering with a swift strike of your sword.
+                The air crackles with tension as the two groups size each other up, each anticipating the other's next move.
+                With a sudden burst of speed, the kobolds lunges forward, their swords slashing through the air with razor-sharp precision. 
+                You react instinctively, parrying the attacks with your shield and countering with a swift strike of your sword.
             </p>
             <p>
-                The kobold dances nimbly around you, its movements fluid and unpredictable. 
-                It feints and dodges, darting in and out of the shadows with uncanny agility, making it difficult for you to land a solid blow.
+                The kobolds dance nimbly around you, their movements fluid and unpredictable. 
+                They feint and dodge, darting in and out of the shadows with uncanny agility, making it difficult for you to land a solid blow.
             </p>
             <?= outcome();?>
             
@@ -185,11 +194,11 @@
         <div class="stats">
             <?= showStats(); ?>
             <div class='enemyStats tooltip'>
-                <img class='enemyAnim3' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;length:50px'alt='pog picture'>
+                <img class='enemyAnim3_2' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;length:50px'alt='pog picture'>
                 <div class='bottom'>
                     <h2>Pog</h2>
                     <h5>"A mysterious talking pot. He's guiding you to the Divine Dragonic Peaks but for what purpose?"</h5>
-                    <p>"Looks like he's tiring out! Keep pressin' the attack!"</p>
+                    <p>"Keep dodgin', mate! We've almost got 'im on the ropes!"</p>
                 </div>
             </div>
         </div>

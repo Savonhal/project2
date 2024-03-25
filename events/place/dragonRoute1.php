@@ -80,12 +80,19 @@
                 And I'll be damned if I let that scaly bastard get away with it."
             </p>
             <p>
-                As they press forward, their senses attuned to the subtle rhythms of the forest, they come upon a fork in the path, each direction shrouded in an aura of mystery and possibility. 
+                As they press forward, their senses attuned to the subtle rhythms of the forest, they come upon a fork in the path, each direction shrouded in an aura of mystery and possibility.
+            </p>
+            <p>
+                As you peer down the fork to the left, the path disappears into darkness, swallowed by the dense foliage that crowds in on either side. 
+                In the dim light filtering through the canopy above, shapes shift and blur, playing tricks on your eyes and heightening your senses to the unseen dangers that lurk within the depths of the forest. 
+            </p>
+            <p>
+                As you gaze down the fork to the right, a faint glimmer of moonlight dances upon the forest floor, casting a soft, silvery glow upon the path ahead. 
+                Unlike the darkness of the left fork, this path seems to beckon with a gentle allure, offering a sense of tranquility amidst the shadowy depths of the woods.
             </p>
             <ul>
-                <li><a href="">Explore the unknown</a></li>
-                <li><a href="">Explore the unknown</a></li>
-                <li><a href="">Explore the unknown</a></li>
+                <li><a href="../encounters/koboldEncounter.php">Take the left fork.</a></li>
+                <li><a href="">Take the right fork.</a></li>
             </ul>   
         </div>
         <div class="stats">

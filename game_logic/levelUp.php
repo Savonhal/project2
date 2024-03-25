@@ -14,23 +14,23 @@
         echo "<p>You've gained ".$monExp." exp!</p>";
 
         //Responsible for scaling
-        $levelUpThreshold = $baseThreshold * pow($scalingFactor, $_SESSION['player']['lvl']-1);
+        $levelUpThreshold = $baseThreshold * round(pow($scalingFactor, $_SESSION['player']['lvl']-1));
 
         //Checks to see if player can level up
         while($_SESSION['player']['exp'] >= $levelUpThreshold){
             //Responsible for scaling
-            $levelUpThreshold = $baseThreshold * pow($scalingFactor, $_SESSION['player']['lvl']-1);
+            $levelUpThreshold = $baseThreshold * round(pow($scalingFactor, $_SESSION['player']['lvl']-1));
             $prevLvl = $_SESSION['player']['lvl'];
             $_SESSION['player']['lvl']++;
             
             //increase stats and restore hp(40%) on level up
             $_SESSION['player']['maxHP'] += $baseMaxHPIncrease;
-            $_SESSION['player']['hp'] = $_SESSION['player']['maxHP'] * .4;
+            $_SESSION['player']['hp'] = round($_SESSION['player']['maxHP'] * .4);
             $_SESSION['player']['atk'] += $baseAtkIncrease;
             $_SESSION['player']['def'] += $baseDefIncrease;
             $_SESSION['player']['spd'] += $baseSpdIncrease;
 
-            $_SESSION['player']['exp'] -= $levelUpThreshold;
+            $_SESSION['player']['exp'] -= max($levelUpThreshold,0);
             $_SESSION['player']['expThreshold'] = $levelUpThreshold;
             
             echo "<p>You Leveled up from ".$prevLvl." to ".$_SESSION['player']['lvl'].".</p>";

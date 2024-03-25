@@ -77,10 +77,15 @@
 .enemyAnim2{
     animation: walk-animation 5s infinite;
 }
-/*For fast enemies*/
 
+/*For fast enemies*/
 .enemyAnim3{
     animation: jump-shaking 1s infinite;
+}
+
+/*Variation of enemyAnim3*/
+.enemyAnim3_2{
+    animation: jump-shaking 2s infinite;
 }
 
 /*For slow enemies*/

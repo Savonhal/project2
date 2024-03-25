@@ -1,5 +1,5 @@
 <?php
-
+    //left side of dragonRoute1
     session_start();
     require '../showStats2.php';
 
@@ -31,7 +31,7 @@
                         <p><img src='../../images/icons/medal-skull.png'>exp:".$monster['monExp']."</p>
                     </div>
             </div>
-            
+            <img class='enemyAnim2' src='../../images/enemy/kobold.jpg' style='width:200px;length:100px'alt='kobold picture'>
         ";
         echo'<p>
             "Watch out for those little buggers! They may be small, but they\'re crafty little devils. You ever seen one try to pick a lock? It\'s like watchin\' a monkey try to solve a puzzle!"
@@ -69,7 +69,7 @@
             <h3>Encounter:</h3>
             <?= encounter() ?>
         </div>
-        <div class="textbox forest3">
+        <div class="textbox thicket">
             <h2>To the Divine Draconian Peaks: Draconian Woodlands (P2 1)</h2>
             <h4>
                "The Draconian Woodlands are home to a myriad of flora and fauna, each species intricately woven into the tapestry of life that thrives within its depths.
@@ -82,19 +82,19 @@
             </audio>
             <p>
                 You and Pog decide to go to the left.
-                As Pog and you navigate through the dense underbrush of the forest, you suddenly find yourselves confronted by a small figure emerging from the shadows. 
-                It is a kobold, its eyes gleaming with a feral intensity as it fixes its gaze upon you.
+                As Pog and you navigate through the dense underbrush of the forest, you suddenly find yourselves confronted by not one, but two small figures emerging from the shadows. 
+                They are kobolds, their eyes gleaming with a feral intensity as they fix their gazes upon you.
             </p>
             <p>
-                With a snarl of aggression, the kobold readies itself for battle, its stance poised for attack as it prepares to defend its territory against intruders. 
-                Sensing the tension in the air, Pog steps forward, his eyes narrowing as he sizes up your diminutive foe.
+                With snarls of aggression, the kobolds ready themselves for battle, their stances poised for attack as they prepare to defend their territory against intruders. 
+                Sensing the tension in the air, Pog steps forward, his eyes narrowing as he sizes up your diminutive foes.
             </p>
             <p>
-                "Well, well, well," Pog says with a smirk, his voice dripping with sarcasm. "Looks like we've stumbled upon a wee little kobold. 
-                What's the matter, little fella? Lost your way from the playground?"
+                "Well, well, well," Pog says with a smirk, his voice dripping with sarcasm. 
+                "Looks like we've got a pair of kobolds on our hands. What's the matter, little fellas? Lost your way from the playground?"
             </p>
-            <p>Despite its diminutive stature, there is an undeniable menace to the kobold's presence, a primal aura that speaks of cunning and savagery honed through countless generations of survival in the harsh wilderness.</p>
-            <p>Ignoring Pog's taunts, the kobold bares its teeth in a menacing snarl, its claws twitching with anticipation as it prepares to strike. </p>
+            
+            <p>Ignoring Pog's taunts, the kobolds bare their teeth in menacing snarls, their claws twitching with anticipation as they prepare to strike. </p>
             <a href='../battleOutcome/koboldOutcome.php'><p>With a nod from Pog, you ready your weapon, knowing that this encounter could turn deadly at any moment.</p></a>
         </div>
         

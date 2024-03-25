@@ -8,7 +8,7 @@
         "name" => "Troll",
         "hp" => 150,
         "maxHP" => 150,
-        "atk" => 45,
+        "atk" => 40,
         "def" => 45,
         "spd" => 2,
         "monExp" => 200,
@@ -49,7 +49,7 @@
                 As darkness closes in around you, you can only watch helplessly as the troll looms over you, its victorious roar echoing in the desolate wilderness.
                 You've died..
             </p>";
-            echo"<img src='../../images/player/grave.jpg'>";
+            echo"<img style='width:200px;length:100px' src='../../images/player/grave.jpg'>";
             echo"
                 <ul>
                     <li><a href='../../index.php'>Create a new Character?</a></li>
@@ -90,7 +90,7 @@
                 //Player attacks monster first
                 
                 $playerDMG = round(($_SESSION['player']['atk'] + rand(1, 6)) * (100/(100+$monster['def'])) ,0);
-                $monster['hp'] -= $playerDMG;
+                $monster['hp'] -= round($playerDMG);
                 echo "<p>".$_SESSION['player']['name']." attacks ".$monster['name']." for ".$playerDMG.". ".$monster['name']." HP: ".$monster['hp']."/".$monster['maxHP']."\n</p>";
                 if($monster['hp'] <= 0){
                     $winBattle = true;
@@ -99,7 +99,7 @@
                 }
                 
                 $monDMG = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
-                $_SESSION['player']['hp'] -= $monDMG;
+                $_SESSION['player']['hp'] -= round($monDMG);
                 echo "<p>".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
                 if($_SESSION['player']['hp'] <= 0){
                     $winBattle = false;
@@ -110,7 +110,7 @@
             }else if($monsterRoll > $userRoll){
                 //Monster attacks first
                 $monDMG = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
-                $_SESSION['player']['hp'] -= $monDMG;
+                $_SESSION['player']['hp'] -= round($monDMG);
                 echo "<p>".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
                 if($_SESSION['player']['hp'] <= 0){
                     $winBattle = false;
@@ -119,7 +119,7 @@
                 }
                 
                 $playerDMG = round(($_SESSION['player']['atk'] + rand(1, 6)) * (100/(100+$monster['def'])) ,0);
-                $monster['hp'] -= $playerDMG;
+                $monster['hp'] -= round($playerDMG);
                 echo "<p>".$_SESSION['player']['name']." attacks ".$monster['name']." for ".$playerDMG.". ".$monster['name']." HP: ".$monster['hp']."/".$monster['maxHP']."\n</p>";
                 if($monster['hp'] <= 0){
                     $winBattle = true;

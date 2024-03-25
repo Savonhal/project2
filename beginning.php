@@ -59,7 +59,7 @@
             <p>
                 Barren and lifeless, the land lies beneath an indifferent sky, its soil cracked and parched from ages of neglect.
                 A sense of dread coils within the pit of your stomach, its venomous whispers echoing through the recesses of your mind. You stand alone amidst the desolation, adrift in a sea of darkness and uncertainty, with no beacon to guide your way through the encroaching shadows.
-                Instinctively, your fingers find purchase upon the worn hilt of a rusty sword and the battered surface of a weather-beaten shield. Though time has weathered these implements, they remain steadfast companions in this forsaken land.
+                Instinctively, your fingers find purchase upon the worn hilt of a sword and the glistening surface of a shield. Though time has weathered these implements, they remain steadfast companions in this forsaken land.
             </p>
             <p>
                 With these humble tools in hand, you stand ready to face the challenges that lie ahead. Your grip is firm, your resolve unyielding. Despite the odds stacked against you, you are determined to carve a path through the shadows, one swing of your sword and one deft parry of your shield at a time.
