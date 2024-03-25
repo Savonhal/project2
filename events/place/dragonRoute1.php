@@ -62,9 +62,9 @@
                 <source src="../../music/yume.mp3" type="audio/mpeg">
             </audio>
             <p>
-                As Pog and the player venture deeper into the heart of the Draconian Woodlands, the dense canopy above casts a dappled pattern of shadows upon the forest floor. 
+                As Pog and you venture deeper into the heart of the Draconian Woodlands, the dense canopy above casts a dappled pattern of shadows upon the forest floor. 
                 The air is thick with the heady scent of earth and moss, and the sound of rustling leaves fills the tranquil silence of the woodland realm.
-                Pog's usually jovial demeanor takes on a more somber tone. Sensing the player's curiosity, he clears his throat and begins to speak, his voice tinged with a hint of regret.
+                Pog's usually jovial demeanor takes on a more somber tone. Sensing the your curiosity, he clears his throat and begins to speak, his voice tinged with a hint of regret.
             </p>
             <p>
                 "Ya see, mate," Pog begins, his eyes scanning the dense undergrowth for any signs of danger, "that troll back there wasn't always in such a sorry state. No, sir. 
@@ -92,6 +92,7 @@
             </p>
             <ul>
                 <li><a href="../encounters/koboldEncounter.php">Take the left fork.</a></li>
+                <br>
                 <li><a href="">Take the right fork.</a></li>
             </ul>   
         </div>

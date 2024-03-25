@@ -25,7 +25,8 @@
             
             //increase stats and restore hp(40%) on level up
             $_SESSION['player']['maxHP'] += $baseMaxHPIncrease + round($_SESSION['player']['lvl']*0.5);
-            $recoveredHP = round($_SESSION['player']['maxHP'] * .4);
+            $recoveredHP = (round($_SESSION['player']['maxHP'] * .4) + $_SESSION['player']['hp']) >  $_SESSION['player']['maxHP'] ?  
+                $_SESSION['player']['maxHP']-$_SESSION['player']['hp'] : round($_SESSION['player']['maxHP'] * .4);
             $_SESSION['player']['hp'] += $recoveredHP;
             $_SESSION['player']['atk'] += $baseAtkIncrease + round($_SESSION['player']['lvl']*0.5);
             $_SESSION['player']['def'] += $baseDefIncrease + round($_SESSION['player']['lvl']*0.5);
