@@ -24,17 +24,18 @@
             $_SESSION['player']['lvl']++;
             
             //increase stats and restore hp(40%) on level up
-            $_SESSION['player']['maxHP'] += $baseMaxHPIncrease;
-            $_SESSION['player']['hp'] = round($_SESSION['player']['maxHP'] * .4);
-            $_SESSION['player']['atk'] += $baseAtkIncrease;
-            $_SESSION['player']['def'] += $baseDefIncrease;
-            $_SESSION['player']['spd'] += $baseSpdIncrease;
+            $_SESSION['player']['maxHP'] += $baseMaxHPIncrease + round($_SESSION['player']['lvl']*0.5);
+            $recoveredHP = round($_SESSION['player']['maxHP'] * .4);
+            $_SESSION['player']['hp'] += $recoveredHP;
+            $_SESSION['player']['atk'] += $baseAtkIncrease + round($_SESSION['player']['lvl']*0.5);
+            $_SESSION['player']['def'] += $baseDefIncrease + round($_SESSION['player']['lvl']*0.5);
+            $_SESSION['player']['spd'] += $baseSpdIncrease + round($_SESSION['player']['lvl']*0.5);
 
             $_SESSION['player']['exp'] -= max($levelUpThreshold,0);
             $_SESSION['player']['expThreshold'] = $levelUpThreshold;
             
             echo "<p>You Leveled up from ".$prevLvl." to ".$_SESSION['player']['lvl'].".</p>";
-            echo "<p>You've recovered your HP.</p>";
+            echo "<p>You've recovered ".$recoveredHP."  HP.</p>";
             echo "<p>Your Stats increased.</p>";
         }
     }

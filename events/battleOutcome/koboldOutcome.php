@@ -78,8 +78,8 @@
                     <p><img src='../../images/icons/sprint.png'>Speed:".$monster['spd']."</p>
                     <p><img src='../../images/icons/medal-skull.png'>exp:".$monster['monExp']."</p>
                 </div>
-                <img class='enemyAnim3_2' src='../../images/enemy/kobold.jpg' style='width:200px;length:100px'alt='kobold picture'>
             </div>
+            <img class='enemyAnim3_2' src='../../images/enemy/kobold.jpg' style='width:200px;length:100px'alt='kobold picture'>
         ";
         echo"<h3> Battle Log: </h3>";
         $minimumDamage = 1;
@@ -96,7 +96,7 @@
                 if($monster['hp'] <= 0){
                     $winBattle = true;
                     echo "<p>One of the ".$monster['name']."s have died!\n</p>";
-                    echo "<p>The other".$monster['name']." scampers away yelping!</p>";
+                    echo "<p>The other ".$monster['name']." scampers away yelping!</p>";
                     break;
                 }
                 
@@ -132,6 +132,7 @@
                 if($monster['hp'] <= 0){
                     $winBattle = true;
                     echo "<p>The ".$monster['name']." has died!\n</p>";
+                    echo "<p>The other ".$monster['name']." scampers away yelping!</p>";
                     break;
                 }
             }

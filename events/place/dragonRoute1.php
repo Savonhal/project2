@@ -102,7 +102,7 @@
                 <div class='bottom'>
                     <h2>Pog</h2>
                     <h5>"A mysterious talking pot. He's guiding you to the Divine Draconian Peaks but for what purpose?"</h5>
-                    <p>"That dragon is definitey near the Divine Draconian Peaks. Once we get my orb, I'll help ya sort things out with the rest of stuff at the Divine Draconian Peaks."</p>
+                    <p>"That dragon is definitely near the Divine Draconian Peaks. Once we get my orb, I'll help ya sort things out with the rest of stuff at the Divine Draconian Peaks."</p>
                 </div>
             </div>
         </div>
