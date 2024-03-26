@@ -3,7 +3,7 @@
     session_start();
 
     require '../showStats2.php';
-    require '../../rest.php';
+    require '../heal/rest.php';
   
 ?>
 

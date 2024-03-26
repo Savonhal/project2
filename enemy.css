@@ -69,11 +69,11 @@
 @keyframes boss_glow{
     0% {
         opacity: 1;
-        text-shadow: 0 0 1px rgb(143, 5, 5);
+        text-shadow: 0 0 1px rgb(255, 1, 1);
     }
     100% {
         opacity: 1.5;
-        text-shadow: 0 0 30px rgb(228, 6, 6);
+        text-shadow: 0 0 30px rgb(241, 218, 218);
     }
 }
 

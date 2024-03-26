@@ -7,11 +7,11 @@
 
     $monster = [
         "name" => "Kobold",
-        "hp" => 70,
-        "maxHP" => 70,
-        "atk" => 10,
-        "def" => 5,
-        "spd" => 25,
+        "hp" => 70 + round($_SESSION['player']['atk']*.3),
+        "maxHP" => 70 + round($_SESSION['player']['atk']*.3),
+        "atk" => 10 + round($_SESSION['player']['atk']*.5),
+        "def" => 10,
+        "spd" => 30,
         "monExp" => 100,
     ];
 
@@ -49,10 +49,10 @@
                 As darkness envelops your vision, you hear their triumphant howls echoing in the distance. 
                 You have died...
             </p>";
-            echo"<img style='width:200px;length:100px' src='../../images/player/grave.jpg'>";
+            echo"<img style='width:200px;length:100px' src='../../images/player/grave.png'>";
             echo"
                 <ul>
-                li><a href='../../index.php'>Create a new Character?</a></li>
+                <li><a href='../../index.php'>Create a new Character?</a></li>
                 </ul>
             ";
         }

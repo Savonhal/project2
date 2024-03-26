@@ -49,7 +49,7 @@
                 As darkness closes in around you, you can only watch helplessly as the troll looms over you, its victorious roar echoing in the desolate wilderness.
                 You've died..
             </p>";
-            echo"<img style='width:200px;length:100px' src='../../images/player/grave.jpg'>";
+            echo"<img style='width:200px;length:100px' src='../../images/player/grave.png'>";
             echo"
                 <ul>
                     <li><a href='../../index.php'>Create a new Character?</a></li>

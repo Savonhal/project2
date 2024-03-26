@@ -240,9 +240,9 @@
             <h3>Encounter: </h3>
             <?= battle(); ?>
         </div>
-        <div class="textbox wood_village">
-            <h2>To the Divine Draconian Peaks: Draconian Woodlands (P2: Route 1 (BOSS))</h2>
-            <h2>Showdown at Great Insect Village: Diamond Mantis</h2>
+        <div class="textbox thicket">
+            <h2>To the Divine Draconian Peaks: Draconian Woodlands (P2: Route 1 BOSS)</h2>
+            <h2>BOSS ENCOUNTER: <span class="boss">Diamond Mantis</span></h2>
             <h3>Music:</h3>
             <audio controls loop autoplay>
                 <source src="../../music/boss_battle/boss.mp3" type="audio/mpeg">

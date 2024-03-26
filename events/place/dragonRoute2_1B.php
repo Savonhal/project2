@@ -4,6 +4,7 @@
 
     require '../showStats2.php';
     require '../heal/rest.php';
+    //require '../heal/rest.php';
   
 ?>
 
