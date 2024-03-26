@@ -43,8 +43,24 @@
     <div class="box">
         <div class="battleBox">
             <h3>Encounter :</h3>
-            <img class="enemyAnim"src='images/player/sword.jpg' style="width:200px;height:150px">
-            <img class="enemyAnim1"src='images/player/shield.jpg' style="width:200px;height:150px">
+            <div class='enemyStats tooltip'>
+                <img class="enemyAnim"src='images/player/sword.jpg' style="width:200px;height:150px">
+                <div class='bottom'>
+                    <h2>Your sword</h2>
+                    <h5>"An old but still reliable sword. It glistens in the moonlight a pale silver."</h5>
+                    <p>"Memories flood into your head, as you somehow recall this sword but nothing else. It looks newer and shinier then you remember."</p>
+                </div>
+            </div>
+            
+            <div class='enemyStats tooltip'>
+                <img class="enemyAnim1"src='images/player/shield.jpg' style="width:200px;height:150px">
+                <div class='bottom' style="left:100px">
+                    <h2>Your shield</h2>
+                    <h5>"An old but still reliable shield. It radiates a silver glow with a tinge of green."</h5>
+                    <p>"Memories flood into your head, as you somehow recall this sword but nothing else. It looks newer and shinier then you remember."</p>
+                </div>
+            </div>
+            
         </div>
         <div class="textbox forest3">
             <h2>Termina: The Beginning</h2>
