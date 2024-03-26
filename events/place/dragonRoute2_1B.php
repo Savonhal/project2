@@ -68,28 +68,23 @@
                 <source src="../../music/seishishitauchu.mp3" type="audio/mpeg">
             </audio>
             <p>
-                As Pog and the player approach the outskirts of Havenwood, a sense of trepidation hangs heavy in the air. The air thick with the scent of damp earth and decaying foliage, lends an eerie ambiance to the surroundings.
-                Emerging from the depths of the forest, the settlement of Havenwood comes into view, nestled amidst the towering trees like a hidden oasis in the wilderness. Buildings constructed from weathered timber and woven vines rise from the forest floor, their structures blending seamlessly with the natural landscape. Lanterns fashioned from glowing fae crystals cast a soft, ethereal light upon the scene, illuminating the pathways and casting dancing shadows upon the walls.
+               
             </p>
             <p>
-                Despite the tranquility of its surroundings, there is an unmistakable air of resilience about Havenwood, a testament to the strength and determination of its inhabitants. The settlement bears the scars of its tumultuous history, with signs of recent construction interspersed with remnants of the past.
-                Cracks mar the surfaces of some buildings, while others show signs of hasty repair, evidence of the hardships endured by its residents.
+
             </p>
             <p>
-                As Pog and the player draw closer, they can see figures moving about the settlement, going about their daily tasks with a sense of purpose and determination. 
-                Fairies flit through the air on delicate wings, while elves and members of the unique undead race bustle about, tending to crops, repairing structures, and engaging in lively conversation.
+
+\            </p>
+            <p>
+            
             </p>
             <p>
-                Pog's brow furrows in curiosity as he observes the Undying moving seamlessly among the other residents of Havenwood. It strikes him as odd, considering their undead nature, but he quickly realizes that their presence may be connected to the broader unrest occurring in the Divine Draconian Peaks.
-                With a thoughtful nod, Pog murmurs to the player, his voice tinged with intrigue, "Seems we've stumbled upon quite the melting pot of beings here, eh? But those Undying folk... They're a curious lot. Bet they've got stories to tell, especially with all the rumblings from the underworld and that rebellion up in the Peaks."
-                He casts a lingering gaze over the settlement, pondering the implications of their presence amidst the tranquil surroundings of Havenwood.
-            </p>
-            <p>
-                You and Pog decide to stay the night at an inn at the New Havenwood settlement. In the morning, You and Pog leave the inn and continue foward in your journey.
+                
             </p>
             <?= rest()?>
             <ul>
-                <li><a href="../encounters/diamondMantisEncounter.php">But just as Pog and the player leaves the inn, a fairy and an undying girl approaches you.</a></li>
+                <li><a href="../encounters/diamondMantisEncounter.php">But just as Pog and the player are about to leave the village, a fairy and an undying girl approaches you.</a></li>
             </ul>   
         </div>
         <div class="stats">

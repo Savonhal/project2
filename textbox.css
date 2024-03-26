@@ -25,30 +25,42 @@ body{
     background-image: url(./images/background/Caverns_background.jpg);
     background-repeat: no-repeat;
     background-position: right-top;
+    background-size: cover;
 }
 
 .forest1{
     background-image: url(./images/background/Forest_background1.png);
     background-repeat: no-repeat;
     background-position: right-top;
+    background-size: cover;
 }
 
 .forest3{
     background-image: url(./images/background/Forest_background3.png);
     background-repeat: no-repeat;
     background-position: right-top;
+    background-size: cover;
 }
 
 .thicket{
     background-image: url(./images/background/Thicket_background.png);
     background-repeat: no-repeat;
     background-position: right-top;
+    background-size: cover;
+}
+
+.wood_village{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./images/background/insect_village.jpg);
+    background-repeat: no-repeat;
+    background-position: right-top;
+    background-size: cover;
 }
 
 .void{
     background-image: url(./images/background/Void_background2.png);
     background-repeat: no-repeat;
     background-position: right-top;
+    background-size: cover;
 }
 
 .box{

@@ -8,8 +8,8 @@
     function encounter(){
         $monster = [
             "name" => "Kobold",
-            "hp" => 50,
-            "maxHP" => 50,
+            "hp" => 70,
+            "maxHP" => 70,
             "atk" => 8,
             "def" => 5,
             "spd" => 13,

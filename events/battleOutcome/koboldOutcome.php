@@ -7,8 +7,8 @@
 
     $monster = [
         "name" => "Kobold",
-        "hp" => 60,
-        "maxHP" => 60,
+        "hp" => 70,
+        "maxHP" => 70,
         "atk" => 10,
         "def" => 5,
         "spd" => 25,

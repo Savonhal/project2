@@ -36,7 +36,7 @@
             //echo where the player can go next
             echo"
                 <ul>
-                    <li><a href='../place/dragonRoute1.php'>Continue the fight</a></li>
+                    <li><a href='../place/dragonRoute1.php'>Make your way to the Draconian Woodlands</a></li>
                 </ul>
             ";
         }else{

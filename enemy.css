@@ -61,6 +61,22 @@
     margin-bottom: -20px;
 }
 
+.boss{
+    color: red;
+    animation: boss_glow 5s infinite alternate;
+}
+
+@keyframes boss_glow{
+    0% {
+        opacity: 1;
+        text-shadow: 0 0 1px rgb(143, 5, 5);
+    }
+    100% {
+        opacity: 1.5;
+        text-shadow: 0 0 30px rgb(228, 6, 6);
+    }
+}
+
 /*Animations for Enemies*/
 
 /*For flying, floating enemies*/

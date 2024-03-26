@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../../encountersAnimation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
-    <title>Draconian Woodlands (P1)</title>
+    <title>Draconian Woodlands (P2: Route 1)</title>
     <style>
         h2{
             font-family: 'Cardo';
@@ -59,27 +59,27 @@
             </h4>
             <h3>Music:</h3>
             <audio controls loop autoplay>
-                <source src="../../music/choushinkainoyuuei.mp3" type="audio/mpeg">
+                <source src="../../music/akaifuusen.mp3" type="audio/mpeg">
             </audio>
             <p>
                 After the intense battle with the kobolds, Pog pauses to catch his breath, a look of surprise crossing his face as he examines you with newfound admiration.
                 "Blimey, mate," he says, shaking his head in disbelief. "I've gotta hand it to ya, you're really comin' into your own out 'ere. I've seen a fair share of travelers in my time, but I ain't never seen someone grow in strength like you have. It's downright unnatural, it is!"
-                You offer a modest shrug in response, still feeling the rush of adrenaline from the battle. "I suppose I've been through a few scrapes," you say, trying to downplay your newfound abilities.
+                You offer a modest shrug in response, still feeling the rush of adrenaline from the battle.You try to downplay your newfound abilities to consuming the dragon breath elixir and wyrm scales.
             </p>
             <p>
-                But Pog isn't convinced. "Nah, mate, it ain't just a few scrapes," he insists. "You've got somethin' special about ya, somethin' that's makin' you stronger with each passing moment. 
+                But Pog isn't convinced. "Nah, mate, it ain't just goodies that I told ya to eat. That stuff makes ya stronger but it ain't that potent." he insists. "You've got somethin' special about ya, somethin' that's makin' you stronger with each passing moment. 
                 And trust me, we're gonna need every bit of that strength if we wanna stand a chance against them dragons up at the Divine Draconian Peaks."
                 As you continue through the forest, the atmosphere grows increasingly dense and oppressive, the tangled undergrowth closing in around you like a suffocating embrace. Shafts of sunlight filter through the dense canopy above, casting dappled shadows on the forest floor.
-                Pog leads the way, his keen eyes scanning the surroundings for any signs of danger. "Keep yer wits about ya, mate," he warns, his voice low and cautious. "We're gettin' close to the giant insect nest now, and we don't wanna go stirrin' up trouble where there ain't none."
+                "This part of the woods is no place for the faint of heart," Pog remarks, his voice tinged with a hint of caution. "The thick foliage and rugged terrain make it a haven for all manner of beasts and monsters. Most settlements steer clear of these parts, opting for safer, more hospitable areas."
             </p>
             <p>
-                As you walk, Pog begins to explain the peculiar nature of the giant insects that inhabit the forest. Despite their formidable size, these creatures are surprisingly intelligent and neutral, more curious than aggressive towards intruders in their territory. 
-                Their lack of natural predators and slow reproductive rate have allowed them to evolve a cautious and thoughtful approach to survival.
-                "These insects ain't like the rest of the critters 'round 'ere," Pog explains, his brow furrowed in thought. "They've got a mind of their own, they do. They even trade with other creatures, can ya believe it? Seems they're on the cusp of achievin' true sentience, and the lord of the woods is watchin' 'em closely."
-                You listen intently as Pog recounts tales of the giant insects' strange behavior and their close relationship with the lord of the woods. It's a fascinating glimpse into the intricacies of the forest ecosystem, and you can't help but feel a sense of awe at the creatures' intelligence and resilience.
+                He continues to paint a picture of the harsh realities of life in the Draconian Woods, describing the constant struggle for survival against the elements and the ever-present threat of predators lurking in the shadows. 
+                "But even in the darkest of places, there is sometimes a glimmer of hope," Pog muses, his tone suddenly changing as he catches sight of something unexpected in the distance. "Look there, in the clearing ahead. Is that...a settlement?"
+                His disbelief is palpable as he gazes upon the distant cluster of buildings, a stark contrast to the forbidding landscape that surrounds them. "Either they're brave beyond measure or they've lost their minds," he mutters incredulously, his expression a mix of disbelief and curiosity. 
+                "But whatever their reasons, it seems we're not alone in these woods after all."
             </p>
             <ul>
-                <li><a href="../encounters/koboldEncounter.php">As you approach the edge of the giant insect nest, you steel yourself for whatever challenges lie ahead</a></li>
+                <li><a href="../place/dragonRoute2_1A.php">As you approach the edge of the settlement.</a></li>
             </ul>   
         </div>
         <div class="stats">
@@ -89,7 +89,8 @@
                 <div class='bottom'>
                     <h2>Pog</h2>
                     <h5>"A mysterious talking pot. He's guiding you to the Divine Draconian Peaks but for what purpose?"</h5>
-                    <p>"You know, back in the day, me and the lord of the woods used to butt heads more times than I care to count. But looks like he's found himself a new hobby with these bugs. Can't say I blame him, really."p>
+                    <p>"You know, back in the day, me and the lord of the woods used to butt heads more times than I care to count. "</p>
+                    <p>"Be on ya toes mate. A village in this stretch of the woods is mighty suspicious."</p>
                 </div>
             </div>
         </div>
