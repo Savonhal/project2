@@ -35,7 +35,7 @@
             </p>";
             echo"
             <div class='enemyStats tooltip'>
-                <img class='enemyAnim2' src='../../images/encounters/lord_of_the_dracovian_woods_left.png' style='width:200px;length:100px'alt='wold picture'>
+                <img class='enemyAnim2' src='../../images/encounters/lord_of_the_dracovian_woods_left.png' style='width:250px;length:100px'alt='wold picture'>
                     <div class='right'>
                         <h2>???</h2>
                         <h5>
@@ -68,7 +68,7 @@
             </p>";
             echo"
             <div class='enemyStats tooltip'>
-                <img class='enemyAnim2' src='../../images/encounters/lord_of_the_dracovian_woods_left.png' style='width:200px;length:100px'alt='wold picture'>
+                <img class='enemyAnim2' src='../../images/encounters/lord_of_the_dracovian_woods_left.png' style='width:250px;length:100px'alt='wold picture'>
                     <div class='right'>
                         <h2>???</h2>
                         <h5>
@@ -103,12 +103,12 @@
         global $monster;
         echo"
         <div class='enemyStats tooltip'>
-                <img class='enemyAnim3' src='../../images/bosses/diamondMantis.jpg' style='width:200px;length:100px'alt='mantis picture'>
-                <div class='right'>
-                    <h2>".$monster['name']."</h2>
+                <img class='enemyAnim3' src='../../images/bosses/diamondMantis.png' style='width:300px;length:100px'alt='mantis picture'>
+                <div class='right' style='left: 250px'>
+                    <h2 class='boss'>".$monster['name']."</h2>
                     <h5>
                         'Ruthless and Unrelenting, this apex predator normally stalks the dense and dark parts of the Draconian Woodlands in search for its favorite meal: Greater Insects.
-                         However, it seems like this individual attacked the village directly.'
+                         However, it seems like they've been getting closer to New Havenwood.'
                     </h5>
                     <p><img src='../../images/icons/hearts.png'>HP: ".$monster['hp']."/".$monster["maxHP"]."</p>
                     <p><img src='../../images/icons/katana.png'>Attack:".$monster['atk']."</p>
@@ -132,7 +132,7 @@
                 echo "<p>".$_SESSION['player']['name']." attacks ".$monster['name']." for ".$playerDMG.". ".$monster['name']." HP: ".$monster['hp']."/".$monster['maxHP']."\n</p>";
                 if($monster['hp'] <= 0){
                     $winBattle = true;
-                    echo "<p>The ".$monster['name']."s have died!\n</p>";
+                    echo "<p>The ".$monster['name']." have died!\n</p>";
                     break;
                 }
                 
@@ -158,7 +158,8 @@
                                 <p><img src='../../images/icons/medal-skull.png'>exp: ????</p>
                             </div>
                         </div>
-                    ";                    echo "<p>A stark white wolf appears and in a flash the mantis is decapitated! Mantis HP: 0/500</p>";
+                    ";                    
+                    echo "<p>A stark white wolf appears and in a flash the mantis is decapitated! Mantis HP: 0/500</p>";
                     $monster['hp'] = 0;
                     break;
                 }
@@ -188,7 +189,8 @@
                                 <p><img src='../../images/icons/medal-skull.png'>exp: ????</p>
                             </div>
                         </div>
-                    ";                    echo "<p>A stark white wolf appears and in a flash the mantis is decapitated! Mantis HP: 0/500</p>";
+                    ";                    
+                    echo "<p>A stark white wolf appears and in a flash the mantis is decapitated! Mantis HP: 0/500</p>";
                     $monster['hp'] = 0;
                     break;
                 }
@@ -248,9 +250,9 @@
                 <source src="../../music/boss_battle/boss.mp3" type="audio/mpeg">
             </audio>
             <h4>
-                "Indeed, while many of the Great insects of the Draconian Woodlands have undergone significant evolutionary changes over the millennia, the Diamond Mantis stands as a testament to the concept of "if it ain't broke, don't fix it." Unchanged and unyielding, this formidable predator has remained a lethal killing machine since time immemorial. 
-                As the top predator in the region, the mantis's relentless predation has driven many of the Great insect species to evolve complex social behaviors and heightened intelligence as a means of survival.
-                This has led to the development of intricate social hierarchies and communication systems among the insect communities, paving the way for the emergence of sapience in many of the Great Insect species of the Draconian Woodlands.  
+                "Indeed, while many of the Great insects of the Draconian Woodlands have undergone significant evolutionary changes over the millennia, the Diamond Mantis stands as a testament to the concept of "if it ain't broke, don't fix it." 
+                Unchanged and unyielding, this formidable predator has remained a lethal killing machine since time immemorial. 
+                As the top predator in the region, the mantis's relentless predation has driven many of the Great insect species to evolve complex and dangerous defense mechanisms and heightened intelligence as a means of survival.
             </h4>
             <p>
                 The air crackles with tension as you leap into action, joining the fray against the fearsome Diamond Mantis. The mantis looms before you, its crystalline exoskeleton gleaming in the dappled sunlight filtering through the canopy above.
@@ -264,9 +266,7 @@
             Undeterred, you press the attack, driving the mantis back with a flurry of strikes. Each blow lands with the force of a sledgehammer, but still, the mantis refuses to yield. With a roar of defiance, it retaliates, unleashing a barrage of attacks that leave you staggering and gasping for breath.
             </p>
             <?= outcome()?>
-            <ul>
-                <li><a href="../encounters/diamondMantisOutcome.php">Continue to battle </a></li>
-            </ul>   
+              
         </div>
         <div class="stats">
             <?= showStats(); ?>

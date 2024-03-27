@@ -106,9 +106,13 @@
 
 /*For slow enemies*/
 .enemyAnim4{
-    animation: jump-shaking 10s infinite;
+    animation: jump-shaking 5s infinite;
 }
 
+/*For twitching or near dead enemies*/
+.enemyAnim5{
+    animation: skew-x-shaking 10s infinite;
+}
 
 
 
@@ -141,4 +145,13 @@
     65% { transform: translateY(-9px) rotate(10deg) }
     75% { transform: translateY(-9px) rotate(-10deg) }
     100% { transform: translateY(0) rotate(0); }
+}
+
+@keyframes skew-x-shaking{
+    0% { transform: skewX(-1deg); }
+    5% { transform: skewX(1deg); }
+    10% { transform: skewX(-1deg); }
+    15% { transform: skewX(1deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }
 }
