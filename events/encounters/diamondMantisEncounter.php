@@ -102,13 +102,13 @@
 
             <p>
                 One of the spiders, sensing the imminent threat, lunged at the mantis with desperate ferocity, its venomous fangs bared in a futile attempt to defend its fallen kin.
-                But the Mantis was unfazed, its impenetrable carapace repelling the spider's feeble assault with contemptuous ease. After eating most first spider, it turned it's focus on the spider on its back. 
+                But the Mantis was unfazed, its impenetrable carapace repelling the spider's feeble assault with contemptuous ease. After voraciously devouring most of the first spider in seconds, it turned it's focus on the spider on its back. 
                 With a disdainful flick of its massive appendage, the Mantis dispatched the second spider , its lifeless form falling limp to the forest floor.
             </p>
 
             <p>
                 As Pog and you watched in horror, paralyzed by the sheer brutality of the scene unfolding before you, the Diamond Mantis turned its gaze upon you. 
-                As the Mantis turned its cold, unfeeling gaze upon them, a shiver ran down their spines, the weight of its silent judgment pressing down upon them like a suffocating blanket of dread.
+                As the Mantis turned its cold, unfeeling gaze upon you, a shiver ran down your spine, the weight of its silent judgment pressing down upon you like a suffocating blanket of dread.
                 Its multifaceted eyes gleamed with an unsettling intelligence as it twitched its head in anticipation, the anticipation of the hunt. 
                 With a twitch of its head, the Mantis surges forward, its movements erratic and unpredictable, as it charged towards its next victims.
             </p>

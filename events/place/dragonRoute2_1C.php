@@ -47,8 +47,7 @@
                 These arachnids, descendants of a line that has endured for millennias, have adapted to thrive in the dark and treacherous terrain of their woodland domain.
             </p>
             <p>
-                They posses a thick, hairy body that spans several feet in diameter. Their eight legs are strong and agile, allowing them to navigate the dense undergrowth with ease. 
-                Covered in a coat of sleek, black fur, their presence is both eerie and menacing.
+                They possess a thick, hairy body that spans several feet in diameter. Their eight legs are strong and agile, allowing them to navigate the dense undergrowth with ease. 
                 Despite their formidable size and predatory prowess, Giant Spiders do not reign unchallenged in the Draconian Woods. 
                 The presence of the Diamond Mantis, a fearsome apex predator, keeps their population in check, preventing them from becoming true apex predators themselves.
             </p>
