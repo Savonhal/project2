@@ -35,7 +35,7 @@
         <div class="textbox void">
             <div class="intro">
                 <h3>Opening Theme</h3>
-                <audio controls loop>
+                <audio controls autoplay="true" loop>
                     <source src="music/uminifuruyuki.mp3" type="audio/mpeg">
                 </audio>
                 <h1>What is Termina?</h1>
