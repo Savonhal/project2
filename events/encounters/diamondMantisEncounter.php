@@ -17,12 +17,12 @@
         echo"
             <div class='enemyStats tooltip'>
                 <br>
-                <img class='enemyAnim4' src='../../images/bosses/diamondMantis.jpg' style='width:250px;length:125px'alt='mantis picture'>
+                <img class='enemyAnim4' src='../../images/bosses/diamondMantis.png' style='width:250px;length:125px'alt='mantis picture'>
                     <div class='right'>
-                        <h2>".$monster['name']."</h2>
+                        <h2 class='boss'>".$monster['name']."</h2>
                         <h5>
                             'Ruthless and Unrelenting, this apex predator normally stalks the dense and dark parts of the Draconian Woodlands in search for its favorite meal: Greater Insects.
-                             However, it seems like this individual attacked the village directly.'
+                            However, it seems like they've been getting closer to New Havenwood.'
                         </h5>
                         <p><img src='../../images/icons/hearts.png'>HP: ".$monster['hp']."/".$monster["maxHP"]."</p>
                         <p><img src='../../images/icons/katana.png'>Attack:".$monster['atk']."</p>
@@ -40,7 +40,7 @@
             This incredible resilience has allowed the Diamond Mantis to assume its role as a fearsome predator, shaping the very fabric of the Draconian Woodlands through its relentless predation. 
         </p>';
         echo '<p>
-            "You know, if we play our cards right, that Diamond Mantis might just be the ticket to gettin\' on the lord of the woods\' good side. Who knows, maybe he\'ll even owe us a favor after this little skirmish." - Pog
+            "I\'ve heard stories about the Diamond Mantis, but seeing it in action... It\'s a whole different story. That thing\'s a force of nature." - Pog
         </p>';
     }
 
@@ -77,39 +77,44 @@
             <h3>Encounter: </h3>
             <?= encounter() ?>
         </div>
-        <div class="textbox wood_village">
+        <div class="textbox thicket">
             <h2>To the Divine Draconian Peaks: Draconian Woodlands (P2: Route 1 BOSS)</h2>
-            <h2>Showdown at Great Insect Village: <span class="boss">Diamond Mantis</span></h2>
+            <h2>BOSS ENCOUNTER: <span class="boss">Diamond Mantis</span></h2>
             <h3>Music:</h3>
             <audio controls loop autoplay>
                 <source src="../../music/boss_encounter/shinigaminokoushin.mp3" type="audio/mpeg">
             </audio>
             <h4>
-                "Indeed, while many of the Great insects of the Draconian Woodlands have undergone significant evolutionary changes over the millennia, the Diamond Mantis stands as a testament to the concept of "if it ain't broke, don't fix it." Unchanged and unyielding, this formidable predator has remained a lethal killing machine since time immemorial. 
-                As the top predator in the region, the mantis's relentless predation has driven many of the Great insect species to evolve complex social behaviors and heightened intelligence as a means of survival.
-                This has led to the development of intricate social hierarchies and communication systems among the insect communities, paving the way for the emergence of sapience in many of the Great Insect species of the Draconian Woodlands.  
+                "Indeed, while many of the Great insects of the Draconian Woodlands have undergone significant evolutionary changes over the millennias, the Diamond Mantis stands as a testament to the concept of "if it ain't broke, don't fix it." 
+                Unchanged and unyielding, this formidable predator has remained a lethal killing machine since time immemorial. 
+                As the top predator in the region, the mantis's relentless predation has driven many of the Great insect species to evolve complex and dangerous defense mechanisms and heightened intelligence as a means of survival.
             </h4>
             <p>
-                A large mantis, descends from sky and into the middle of the village. 
-                "A Dimaond Mantis has invaded!" a scopion hisses as alarms ring through out the village. 
-                Diamond Mantises are usually be repelled and deterred by the various tools and traps that are set in and around the walls and lands that surround the village but it seems like this one has somehow gotten into the middl eof the village.
-                The giant scorpions and spiders surround the Diamond Mantis in an effort to repel it but their attacks are ineffective. Without those tools and traps being readily accessable in the village, the village will be at it's mercy until those tools get to the middle of the village.
+                Suddenly, the silence was shattered by a low, ominous rumble. 
+                Without warning, the Diamond Mantis emerged from the shadows, its crystalline carapace glinting in the dappled sunlight. 
+                Towering over the spiders, it moved with an unnerving fluidity, its movements so swift and erratic that it seemed to blur with the surrounding foliage.
             </p>
+
             <p>
-                As Pog watches the chaos unfold in the insect village, a sly grin spreads across his face, and a calculating gleam flickers in his eyes.
-                "Now, now, ain't this a stroke of luck," he muses to himself, his lips curling into a smirk. "Helpin' out these bugs might just earn us a favor from ol' Stick-in-the-Mud himself. And we all know how much he loves bein' in debt to yours truly."
+                With a lightning-fast strike, the Diamond Mantis descended upon one of the spiders, its razor-sharp mandibles slicing through chitin and flesh with chilling efficiency. 
+                The unfortunate arachnid let out a shrill, desperate cry as it was pinned beneath the Mantis's relentless assault, its struggles futile against the overwhelming force of its attacker.
             </p>
+
             <p>
-                As he watches the player dive into the fray with determination, Pog's thoughts turn to the lord of the woods and their storied history. Memories of past encounters and petty rivalries flood his mind, each one fueling his desire to come out on top in their ongoing game of one-upmanship.
+                One of the spiders, sensing the imminent threat, lunged at the mantis with desperate ferocity, its venomous fangs bared in a futile attempt to defend its fallen kin.
+                But the Mantis was unfazed, its impenetrable carapace repelling the spider's feeble assault with contemptuous ease. After voraciously devouring most of the first spider in seconds, it turned it's focus on the spider on its back. 
+                With a disdainful flick of its massive appendage, the Mantis dispatched the second spider , its lifeless form falling limp to the forest floor.
             </p>
+
             <p>
-                "Imagine the look on his face when he owes us one," Pog chuckles to himself, a wicked glint in his eye. "Oh, the possibilities... A favor from the lord of the woods could open doors we never even knew existed. All it takes is a little finesse, a touch of charm, and a whole lot of luck."
+                As Pog and you watched in horror, paralyzed by the sheer brutality of the scene unfolding before you, the Diamond Mantis turned its gaze upon you. 
+                As the Mantis turned its cold, unfeeling gaze upon you, a shiver ran down your spine, the weight of its silent judgment pressing down upon you like a suffocating blanket of dread.
+                Its multifaceted eyes gleamed with an unsettling intelligence as it twitched its head in anticipation, the anticipation of the hunt. 
+                With a twitch of its head, the Mantis surges forward, its movements erratic and unpredictable, as it charged towards its next victims.
             </p>
-            <p>
-                With a confident swagger, Pog joins the fray, his mind already plotting his next move.
-            </p>
+
             <ul>
-                <li><a href="../battleOutcome/diamondMantisOutcome.php">Continue to battle </a></li>
+                <li><a href="../battleOutcome/diamondMantisOutcome.php">You ready yourself for combat. </a></li>
             </ul>   
         </div>
         <div class="stats">
@@ -119,7 +124,7 @@
                 <div class='bottom'>
                     <h2>Pog</h2>
                     <h5>"A mysterious talking pot. He's guiding you to the Divine Draconian Peaks but for what purpose?"</h5>
-                    <p>"Well, well, would ya look at that beastie? That there's what we call a Diamond Mantis—a real piece of work, if ya ask me."</p>
+                    <p>"Well, looks like our luck just ran out. That Diamond Mantis has caught wind of us. Brace yourself, partner. We're in for a rough ride."</p>
                 </div>
             </div>
         </div>

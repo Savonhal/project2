@@ -8,11 +8,11 @@
     function encounter(){
         $monster = [
             "name" => "Kobold",
-            "hp" => 70,
-            "maxHP" => 70,
-            "atk" => 8,
-            "def" => 5,
-            "spd" => 13,
+            "hp" => 70 + round($_SESSION['player']['atk']*.3),
+            "maxHP" => 70 + round($_SESSION['player']['atk']*.3),
+            "atk" => 10 + round($_SESSION['player']['atk']*.5),
+            "def" => 10,
+            "spd" => 30,
             "monExp" => 50,
         ];
         echo"

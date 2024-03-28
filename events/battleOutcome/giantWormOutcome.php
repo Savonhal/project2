@@ -5,15 +5,14 @@
     require '../../game_logic/levelUp.php';
 
     $monster = [
-        "name" => "Troll",
-        "hp" => 150,
-        "maxHP" => 150,
-        "atk" => 40,
-        "def" => 45,
-        "spd" => 2,
-        "monExp" => 200,
+        "name" => "Giant Worm",
+        "hp" => 150 + round($_SESSION['player']['atk']*.3),
+        "maxHP" => 150 + round($_SESSION['player']['atk']*.3),
+        "atk" => 45 + round($_SESSION['player']['atk']*.3),
+        "def" => 60 + round($_SESSION['player']['atk']*.3),
+        "spd" => 40,
+        "monExp" => 250,
     ];
-
     //TODO Create battle sequence
     // Roll dice, loop or both?
     
@@ -25,10 +24,9 @@
         global $monster;
         if($winBattle){
             //echo the scenarion of battle and how the player defeated the monster.
-            echo"<p>You dance around its attacks, using your agility to outmaneuver the lumbering beast while delivering precise strikes to its vulnerable points.</p>";
-            echo"<p>With each exchange, the troll's strength begins to wane, its movements growing sluggish from the relentless assault. Sensing an opening, you unleash a flurry of strikes, each blow driving the creature closer to defeat.</p>";
-            echo"<p>Finally, with a mighty swing of your sword, you deliver the decisive blow, cleaving through the troll's thick neck with a resounding crack. With a deafening roar, the creature collapses to the ground, defeated at last.</p>";
-            echo"<p></p>";
+            echo"<p>With each coordinated strike, you and Pog chip away at the Great Worm's defenses, exploiting its sluggish movements to your advantage. As the creature thrashes and writhes, you maintain your focus, dodging its snapping jaws and retaliating with precise, well-timed attacks. Pog's quick wit and strategic guidance prove invaluable, as he directs you to exploit the creature's weak points.</p>";
+            echo"<p>Finally, after a fierce battle of attrition, you deliver a decisive blow that strikes true, severing one of the worm's vital segments. With a deafening roar, the creature recoils, its movements growing increasingly erratic as it struggles to maintain its balance. Sensing an opportunity, you press the attack, driving your weapon deep into the creature's exposed flesh.</p>";
+            echo"<p>With a final, shuddering convulsion, the Great Worm collapses to the forest floor, its massive form quivering in defeat. Exhausted but victorious, you and Pog share a moment of relief amidst the aftermath of the battle. </p>";
             echo"<p></p>";
             levelUp($monster['monExp']);
 
@@ -36,17 +34,14 @@
             //echo where the player can go next
             echo"
                 <ul>
-                    <li><a href='../place/dragonRoute1.php'>Make your way to the Draconian Woodlands</a></li>
+                    <li><a href='../place/dragonRoute2_1.php'>You continue on your journey</a></li>
                 </ul>
             ";
         }else{
             //echo a description of how player was defeated/dead here
             echo"<p>
-                Despite your best efforts, the troll proves to be an unrelenting foe, its massive strength and resilience overwhelming your defenses. 
-                With each thunderous blow, you feel your strength waning, your body battered and bruised from the relentless assault.
-                The troll's fury knows no bounds, its relentless onslaught driving you to the brink of exhaustion.
-                With a final, bone-crushing blow, the troll delivers the decisive strike, sending you sprawling to the ground in defeat. 
-                As darkness closes in around you, you can only watch helplessly as the troll looms over you, its victorious roar echoing in the desolate wilderness.
+                Despite your best efforts, the Great Worm proves to be an overwhelming opponent, its sheer size and strength dwarfing your own. With each thunderous strike of its powerful mandibles, the creature inches closer, its massive form casting a menacing shadow over you.
+                As the battle reaches its climax, a deafening roar fills the air, signaling the creature's final, devastating attack. With a sickening crunch, its jaws clamp down around you, crushing bone and rending flesh with merciless force.
                 You've died..
             </p>";
             echo"<img style='width:200px;length:100px' src='../../images/player/grave.png'>";
@@ -65,12 +60,12 @@
         global $monster;
         echo"
         <div class='enemyStats tooltip'>
-                <img class='enemyAnim4' src='../../images/enemy/troll.jpg' style='width:200px;length:100px'alt='kobold picture'>
+            <img class='enemyAnim4'src='../../images/enemy/greatInsect_worm.png' style='width:259px;length:150px'alt='worm picture'>
                 <div class='right'>
                     <h2>".$monster['name']."</h2>
                     <h5>
-                        With skin as tough as stone and muscles like coiled steel, trolls possess a resilience that belies their brutish appearance. 
-                        Their bodies, adorned with grotesque boils and scars, bear testament to the countless battles they have waged throughout the ages, each scar a mark of their indomitable strength and tenacity.
+                    'The Great Worm primarily feeds on plant matter and smaller creatures that wander into its territory. 
+                    However, when provoked or threatened, it becomes a formidable adversary, capable of unleashing devastating attacks with its powerful jaws and thrashing body.'
                     </h5>
                     <p><img src='../../images/icons/hearts.png'>HP: ".$monster['hp']."/".$monster["maxHP"]."</p>
                     <p><img src='../../images/icons/katana.png'>Attack:".$monster['atk']."</p>
@@ -144,7 +139,7 @@
     <link rel="stylesheet" href="../../encountersAnimation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
-    <title>Troll Encounter</title>
+    <title>Battle with Great Worm</title>
     <style>
         h2{
             font-family: 'Cardo';
@@ -162,13 +157,15 @@
         <div class="battleBox">
             <br>
             <h3>Encounter :</h3>
+            <br>
             <?= battle();?>
         </div>
         <div class="textbox forest3">
-            <h2>Battle & Encounter with the Troll</h2>
+            <h2>Battle with Great Worm</h2>
             <h4>
-                "While trolls are often depicted as brutish and aggressive, they possess a surprising depth of instincts honed by eons of existence in the untamed wilderness. 
-                Masters of their domain, trolls roam the rugged terrain of Termina with a silent, watchful vigilance, their presence serving as a warning to those who would dare challenge their authority."
+                "In the depths of the Draconian Woodlands, a colossal creature known as the Great Worm lurks beneath the forest floor. 
+                Resembling an oversized caterpillar, this massive worm boasts a thick, segmented body covered in tough, chitinous plates. 
+                Its hide is a mottled combination of earthy browns and greens, camouflaging it effectively within the forest terrain.."
             </h4>
             <h3>Battle Music:</h3>
             <audio controls loop autoplay>
@@ -176,24 +173,17 @@
             </audio>
             
             <p>
-                As Pog and the player step out of the cache, they are suddenly startled by a deep, rumbling growl echoing from the shadows. 
-                Emerging from the darkness comes a towering figure, its massive frame casting a long shadow over the barren landscape. 
-                With each heavy footfall, the ground trembles beneath its weight, announcing the arrival of a fearsome troll..
+                As the Great Worm rears its massive form before you, a sense of dread coils in the pit of your stomach.
+                With a sudden lurch, the Giant Worm lunges forward, its gaping maw poised to strike. 
             </p>
             <p>
-                The troll's skin is a sickly shade of blue, marred by grotesque boils and scars from countless battles past. 
-                Its eyes gleam with a primal intelligence, glinting with malice as it fixes its gaze upon Pog and the player.
+                In the chaos of the moment, you and Pog find yourselves momentarily caught off guard. The Great Worm's massive bulk crashes down upon you, its grinding jaws threatening to rend flesh from bone. 
+                Desperately, you raise your weapon, your silver sword glinting in the dappled light as you brace for the inevitable clash.
             </p>
             <p>
-                Pog quips, "Well, ain't you a sight for sore eyes! Looks like someone's been playin' with fire and got burned a few too many times!" 
-                The troll's expression darkens at Pog's mockery, its temper flaring as it readies itself for combat.
-                "That there's a troll, mate. Big, dumb, and not too bright, but don't let that fool ya. They're tough as nails and meaner than a sack of rabid wolves. Best watch your back around this one."
+                With a swift motion, you strike out at the Great Worm, your blade biting deep into its sinewy hide. 
             </p>
-            <p>
-                As the troll charges forward with a thunderous roar, you stand your ground, your sword and shield at the ready. 
-                With lightning reflexes, you dodge its swinging club and retaliate with a swift strike, your blade finding purchase in its thick, gnarled hide.
-                The troll bellows in pain, but it is undeterred, launching a barrage of heavy blows in retaliation.
-            </p>
+            
             
             <?= outcome();?>
             
@@ -206,7 +196,7 @@
                 <div class='bottom'>
                     <h2>Pog</h2>
                     <h5>"A mysterious talking pot. He's guiding you to the Divine Dragonic Peaks but for what purpose?"</h5>
-                    <p>"You're not scared of that big lug, are ya? C'mon, show him what you're made of!"</p>
+                    <p>"Watch out for those jaws! One wrong move, and we'll be nothing but worm bait."</p>
                 </div>
             </div>
 

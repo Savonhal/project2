@@ -62,7 +62,7 @@
                 <source src="../../music/akaifuusen.mp3" type="audio/mpeg">
             </audio>
             <p>
-                After the intense battle with the kobolds, Pog pauses to catch his breath, a look of surprise crossing his face as he examines you with newfound admiration.
+                After the intense battle with the Great Worm, Pog pauses to catch his breath, a look of surprise crossing his face as he examines you with newfound admiration.
                 "Blimey, mate," he says, shaking his head in disbelief. "I've gotta hand it to ya, you're really comin' into your own out 'ere. I've seen a fair share of travelers in my time, but I ain't never seen someone grow in strength like you have. It's downright unnatural, it is!"
                 You offer a modest shrug in response, still feeling the rush of adrenaline from the battle.You try to downplay your newfound abilities to consuming the dragon breath elixir and wyrm scales.
             </p>
