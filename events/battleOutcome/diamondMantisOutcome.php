@@ -54,7 +54,7 @@
             //echo where the player can go next
             echo"
                 <ul>
-                    <li><a href='../place/dragonRoute2_1.php'>The wolf approaches you and Pog. </a></li>
+                    <li><a href='../encounters/lordWolfEncounter.php'>The wolf approaches you and Pog. </a></li>
                 </ul>
             ";
         }else{
@@ -90,7 +90,7 @@
             levelUp($monster['monExp']);
             echo"
                 <ul>
-                <li><a href='../../index.php'>The wolf approaches you and Pog.</a></li>
+                <li><a href='../encounters/lordWolfEncounter.php'>The wolf approaches you and Pog.</a></li>
                 </ul>
             ";
         }

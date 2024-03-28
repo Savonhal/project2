@@ -43,12 +43,12 @@
                 <img class='' src="../../images/enemy/greatInsect_worm.png" style='width:300px;transform:rotate(90deg); margin-left:50px; margin-top:-120px;' alt="spider">
             </div>
             <p>
-                In the dense, shadowy depths of the Draconian woods, lurk the Giant Spiders, formidable predators that strike fear into the hearts of many. 
+                In the dense, shadowy depths of the Draconian woods, lurk the Great Spiders, formidable predators that strike fear into the hearts of many. 
                 These arachnids, descendants of a line that has endured for millennias, have adapted to thrive in the dark and treacherous terrain of their woodland domain.
             </p>
             <p>
                 They possess a thick, hairy body that spans several feet in diameter. Their eight legs are strong and agile, allowing them to navigate the dense undergrowth with ease. 
-                Despite their formidable size and predatory prowess, Giant Spiders do not reign unchallenged in the Draconian Woods. 
+                Despite their formidable size and predatory prowess, Great Spiders do not reign unchallenged in the Draconian Woods. 
                 The presence of the Diamond Mantis, a fearsome apex predator, keeps their population in check, preventing them from becoming true apex predators themselves.
             </p>
         </div>
@@ -74,13 +74,13 @@
             <p>
                 You follow close behind, your senses heightened as you keep a watchful eye on your surroundings. Every rustle of leaves or snap of twigs sets your heart racing, the anticipation of the impending battle thrumming through your veins.
                 Suddenly, Pog comes to a halt, signaling up his handle to signal for you to stop. He crouches down low, his gaze fixed intently on something ahead. Following his lead, you peer through the foliage and stumble upon a gruesome sight.
-                Before them lay the writhing body of a Giant Worm, its bloated form twisting and mangled with two massive spiders are hunched over it. The spiders, each the size of a small carriage, wasted no time in sinking their fangs into the worm's flesh, tearing away chunks of meat with savage relish. 
+                Before them lay the writhing body of a Great Worm, its bloated form twisting and mangled with two massive Great Spiders hunched over it. The spiders, each the size of a small carriage, wasted no time in sinking their fangs into the worm's flesh, tearing away chunks of meat with savage relish. 
                 Their eight legs, long and sinewy, move with eerie precision as they tear into the flesh of their meal.
                 Their abdomens, swollen with the spoils of their feast, pulsed rhythmically with each movement.
             </p>
 
             <p>
-                Pog grimaces in disgust, his features contorting into a mask of disdain as he surveys the scene. "Looks like we've stumbled upon a feast," he mutters, his voice tinged with unease. "Best not to disturb them.
+                Pog grimaces in disgust, his features contorting into a mask of disgust as he surveys the scene. "Looks like we've stumbled upon a feast," he mutters, his voice tinged with unease. "Best not to disturb them."
             </p>
 
 

@@ -111,7 +111,7 @@
 
 /*For twitching or near dead enemies*/
 .enemyAnim5{
-    animation: skew-x-shaking 10s infinite;
+    animation: skew-x-shaking 6s infinite;
 }
 
 

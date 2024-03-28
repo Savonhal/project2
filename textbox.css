@@ -175,3 +175,23 @@ body{
     box-shadow:0 1px 8px #000000;
 }
 
+.divine{
+    animation: divine_glow 10s infinite ease-in-out;
+    color: gainsboro;
+    text-shadow: yellow;
+}
+
+@keyframes divine_glow{
+    0% {
+        opacity: 1;
+        text-shadow: 0 0 1px gold;
+    }
+    50%{
+        opacity: 1.5;
+        text-shadow: 0 0 30px yellow
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 1px gold;
+    }
+}
