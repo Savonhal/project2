@@ -68,7 +68,7 @@
             
             <p>
                 The air is heavy with anticipation as you make your way through the shadowy forest, the faint sounds of the village gradually fading into the distance behind you.
-                Pog leads the way, his eyes darting keenly from side to side as he navigates the winding path
+                Pog leads the way, his eyes darting keenly from side to side as he navigates the winding path.
             </p>
 
             <p>
