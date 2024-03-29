@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Triet",
+        "lvl": 1,
+        "exp": 0,
+        "expThreshold": 100,
+        "maxHP": 100,
+        "hp": 100,
+        "atk": 10,
+        "def": 8,
+        "spd": 12
+    },
+    {
+        "name": "Kamrul",
+        "lvl": 1,
+        "exp": 0,
+        "expThreshold": 100,
+        "maxHP": 100,
+        "hp": 100,
+        "atk": 7,
+        "def": 10,
+        "spd": 9
+    },
+    {
+        "name": "Dat",
+        "lvl": 1,
+        "exp": 0,
+        "expThreshold": 100,
+        "maxHP": 100,
+        "hp": 100,
+        "atk": 12,
+        "def": 6,
+        "spd": 11
+    },
+    {
+        "name": "Player2",
+        "lvl": 1,
+        "exp": 0,
+        "expThreshold": 100,
+        "maxHP": 100,
+        "hp": 100,
+        "atk": 9,
+        "def": 9,
+        "spd": 10
+    },
+    {
+        "name": "Player1",
+        "lvl": 4,
+        "exp": 100,
+        "expThreshold": 100,
+        "maxHP": 100,
+        "hp": 100,
+        "atk": 11,
+        "def": 7,
+        "spd": 8
+    },
+    {
+        "name": "Player1",
+        "lvl": 7,
+        "exp": 300,
+        "expThreshold": 100,
+        "maxHP": 100,
+        "hp": 100,
+        "atk": 11,
+        "def": 7,
+        "spd": 8
+    },
+    {
+        "name": "Player1",
+        "lvl": 10,
+        "exp": 500,
+        "expThreshold": 100,
+        "maxHP": 100,
+        "hp": 100,
+        "atk": 11,
+        "def": 7,
+        "spd": 8
+    }
+]
