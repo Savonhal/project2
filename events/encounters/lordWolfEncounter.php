@@ -124,7 +124,7 @@
             </p>
 
             <ul>
-                <li><a href="../place/">Pog looks at you ready to reveal the truth.</a></li>
+                <li><a href="../place/dragonRoute3.php">Pog looks at you ready to reveal the truth.</a></li>
             </ul>   
         </div>
         <div class="stats">

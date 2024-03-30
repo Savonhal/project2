@@ -75,5 +75,60 @@
         "atk": 11,
         "def": 7,
         "spd": 8
+    },
+    {
+        "name": "Hero",
+        "hp": -42,
+        "atk": 54,
+        "def": 58,
+        "spd": 31,
+        "lvl": 1,
+        "exp": 0,
+        "expThreshold": 100,
+        "maxHP": 152
+    },
+    {
+        "name": "Hero",
+        "hp": 0,
+        "atk": 33,
+        "def": 57,
+        "spd": 57,
+        "lvl": 1,
+        "exp": 0,
+        "expThreshold": 100,
+        "maxHP": 161
+    },
+    {
+        "name": "Hero",
+        "hp": -23,
+        "atk": 30,
+        "def": 25,
+        "spd": 56,
+        "lvl": 1,
+        "exp": 0,
+        "expThreshold": 100,
+        "maxHP": 186
+    },
+    {
+        "name": null,
+        "hp": -2,
+        "atk": 26,
+        "def": 44,
+        "spd": 58,
+        "lvl": 1,
+        "exp": 0,
+        "expThreshold": 100,
+        "maxHP": 175
+    },
+    {
+        "name": "Hero 2",
+        "hp": -1,
+        "atk": 46,
+        "def": 66,
+        "spd": 73,
+        "lvl": 4,
+        "exp": 56,
+        "expThreshold": 144,
+        "maxHP": 257
     }
 ]

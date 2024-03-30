@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../../encountersAnimation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
-    <title>>Draconian Woodlands (P3)</title>
+    <title>Draconian Woodlands (P3)</title>
     <style>
         h2{
             font-family: 'Cardo';
@@ -34,15 +34,23 @@
     </div>
     <div class="box">
         <div class="battleBox ">
-            <h3></h3>
-            
-            <p>
-
-            </p>
-            
+        <h3>Encounter :</h3>
+            <div class='enemyStats tooltip'>
+                <img src='../../images/enemy/dragon_shadow.png' style='width:300px;length:150px'alt='dragon picture'>
+                <div class='right'>
+                    <h2>???</h2>
+                    <h5>"Thief who stole Pog's orb"</h5>
+                    <p><img src='../../images/icons/hearts.png'>HP: ???</p>
+                    <p><img src='../../images/icons/katana.png'>Attack: ???</p>
+                    <p><img src='../../images/icons/shield.png'>Defense: ???</p>
+                    <p><img src='../../images/icons/sprint.png'>Speed: ???</p>
+                    <p><img src='../../images/icons/medal-skull.png'>exp: ????</p>
+                </div>
+            </div>
+            <p>"It seems like Pog's orb is a key to undoing his transformation and returning his powers but wasn't it a Demon God who stole the orb?"</p>
         </div>
 
-        <div class="textbox thicket">
+        <div class="textbox forest1">
             <h2>To the Divine Draconian Peaks: Draconian Woodlands (P3)</h2>
             <h2>The Truth</h2>
             <h4>
@@ -52,7 +60,7 @@
             </h4>
             <h3>Music:</h3>
             <audio controls loop autoplay>
-                <source src="../../music/norowaretayakata.mp3" type="audio/mpeg">
+                <source src="../../music/akinoayumi.mp3" type="audio/mpeg">
             </audio>
             
             <p>
@@ -74,23 +82,28 @@
                 "But when the rebellion erupted on the peaks, I had already seperated from my lord. In the heat of the moment, I was forced to make an ultimatum: protect my family or aid my lord in quelling the insurgents."
             </p>
             <p>
-                "In the end, I choose my family". He sighs, the memory still haunting him. "I managed to save daughter, but... I couldn't protect my wife." After ensuring my daughter safety 
+                "In the end, I choose my family". He sighs, the memory still haunting him. "I managed to save my daughter, but... I couldn't protect my wife. And as I rushed back to aid Bahamut, I was intercepted by a Demon God who stole my divine orb and twisted me into this accursed form.
+                That's when I learned that the rebellion wasn't just a contained domestic issue. Somehow, the insurgents had outside help from some faction lurking in Termina's underworld."
             </p>
 
+            <p>
+                His eyes narrow with a mixture of suspicion and determination. "I don't have all the details, but I've been piecing together what I can. Someone down there is playing a dangerous game, and they've got their sights set on causing chaos in the Peaks."
+                Seiryu's expression darkens as he reflects on the implications of this revelation. "So, yeah, kid. That's the mess I've been tangled up in."
+            </p>
             <p>
                 As you and Pog trek through the woods, the blessing of the Cernunnos has kept many of the monster who live in his domain from approaching you.
             </p>
 
 
             <ul>
-                <li><a href="../place"></a></li>
+                <li><a href="../place/dragonRoute4.php">You make your way to the edge of the Draconian Woodlands</a></li>
             </ul>   
         </div>
 
         <div class="stats">
             <?= showStats(); ?>
             <div class='enemyStats tooltip'>
-                <img src='../../images/encounters/Pot of Cavil A.png' style='width:100px;'alt='kobold picture'>
+                <img class='pogSerious' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;'alt='kobold picture'>
                 <div class='bottom'>
                     <h2>Pog(<span class="divine">Seiryu</span>)</h2>
                     <h5>"Celestial Dragon Seiryu, Guardian of the Divine Draconian Peaks. 
@@ -98,7 +111,7 @@
                         After returning from the Divine Convention and parting ways with his lord, a rebellion sparked and forces Seiryu to make an ultimatum.
                         He shoulders the weight of his decision to this very day."
                     </h5>
-                    <p>"Sorry about not telling ya my real name. Can't risk being tracked down while looking like this..."</p>
+                    <p>"Sorry about not telling ya my real name. Can't risk leaking my identity and being tracked down while looking like this..."</p>
                 </div>
             </div>
         </div>

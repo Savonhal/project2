@@ -22,18 +22,27 @@ function sortByExp($a, $b) {
     return $b['exp'] - $a['exp'];
 }
 
+function sortByLvl($a, $b){
+    return $b['lvl'] - $a['lvl'];
+}
+
 $user_name = $_GET['name'] ?? 'Player1';
 
-$user_matches = filterMatchesByName($user_name, $players_data);
+//$user_matches = filterMatchesByName($user_name, $players_data);
 
-usort($user_matches, 'sortByExp');
+$user_matches = $players_data;
 
-echo '<h3>Match History for ' . $user_name . '</3>';
+//usort($user_matches, 'sortByExp');
+
+usort($user_matches, 'sortByLvl');
+
+//echo '<h3>Match History for ' . $user_name . '</3>';
 echo '</br></br>';
 echo '<table border="1">';
-echo '<tr><th>Lvl</th><th>Exp</th><th>Max HP</th><th>HP</th><th>Atk</th><th>Def</th><th>Spd</th></tr>';
+echo '<tr><th>Name</th><th>Lvl</th><th>Exp</th><th>Max HP</th><th>HP</th><th>Atk</th><th>Def</th><th>Spd</th></tr>';
 foreach ($user_matches as $match) {
     echo '<tr>';
+    echo '<td>' . $match['name'] . '</td>';
     echo '<td>' . $match['lvl'] . '</td>';
     echo '<td>' . $match['exp'] . '</td>';
     echo '<td>' . $match['maxHP'] . '</td>';

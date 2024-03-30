@@ -3,6 +3,7 @@
 
     require '../showStats2.php';
     require '../../game_logic/levelUp.php';
+    require '../../game_logic/saveCharacterStats.php';
 
     $monster = [
         "name" => "Giant Worm",
@@ -45,6 +46,7 @@
                 You've died..
             </p>";
             echo"<img style='width:200px;length:100px' src='../../images/player/grave.png'>";
+            saveCharacterStats('../../data.txt');
             echo"
                 <ul>
                     <li><a href='../../index.php'>Create a new Character?</a></li>

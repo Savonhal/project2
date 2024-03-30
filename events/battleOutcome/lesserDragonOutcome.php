@@ -1,4 +1,5 @@
 <?php 
+    //left side of dragonRoute1 outcome
     session_start();
 
     require '../showStats2.php';
@@ -6,13 +7,13 @@
     require '../../game_logic/saveCharacterStats.php';
 
     $monster = [
-        "name" => "Troll",
-        "hp" => 150,
-        "maxHP" => 150,
-        "atk" => 40,
-        "def" => 45,
-        "spd" => 2,
-        "monExp" => 200,
+        "name" => "Lesser Dragon",
+        "hp" => 100 + round($_SESSION['player']['atk']*.3),
+        "maxHP" => 100 + round($_SESSION['player']['atk']*.3),
+        "atk" => 50 + round($_SESSION['player']['atk']*.1),
+        "def" => 45 + round($_SESSION['player']['atk']*.2),
+        "spd" => 85 + round($_SESSION['player']['atk']*.6),
+        "monExp" => 320,
     ];
 
     //TODO Create battle sequence
@@ -26,35 +27,38 @@
         global $monster;
         if($winBattle){
             //echo the scenarion of battle and how the player defeated the monster.
-            echo"<p>You dance around its attacks, using your agility to outmaneuver the lumbering beast while delivering precise strikes to its vulnerable points.</p>";
-            echo"<p>With each exchange, the troll's strength begins to wane, its movements growing sluggish from the relentless assault. Sensing an opening, you unleash a flurry of strikes, each blow driving the creature closer to defeat.</p>";
-            echo"<p>Finally, with a mighty swing of your sword, you deliver the decisive blow, cleaving through the troll's thick neck with a resounding crack. With a deafening roar, the creature collapses to the ground, defeated at last.</p>";
-            echo"<p></p>";
-            echo"<p></p>";
+            echo"<p>As you face off against the pack of lesser dragons, their reptilian eyes fixate on you with predatory intent. They move swiftly, darting in and out as they attempt to surround you. With each snarl, their sharp teeth glint in the sunlight, and their powerful wings create gusts of wind as they flap aggressively.</p>";
+            echo"<p>You manage to keep your cool, wielding your weapon with precision as you fend off their attacks. Dodging and weaving, you anticipate their movements, striking whenever you find an opening. Your strikes land true, causing the smaller dragons to recoil and hiss in pain.</p>";
+            echo"<p>Despite their ferocity, the lesser dragons begin to falter under your relentless assault. One by one, they retreat, sensing their imminent defeat. With a final, decisive blow, you dispatch the last remaining dragon, leaving the battlefield victorious.</p>";
+            echo"<p>Pog cheers triumphantly, clapping you on the back with a grin. \"Well done, mate! That's how you handle a couple of pesky kobolds! They won't be botherin' us again anytime soon, that's for sure!\"</p>";
             levelUp($monster['monExp']);
-
-
+            levelUp($monster['monExp']);
+            levelUp($monster['monExp']);
             //echo where the player can go next
             echo"
                 <ul>
-                    <li><a href='../place/dragonRoute1.php'>Make your way to the Draconian Woodlands</a></li>
+                    <li><a href='../encounters/giantWormEncounter.php'>Continue exploring.</a></li>
                 </ul>
             ";
         }else{
             //echo a description of how player was defeated/dead here
             echo"<p>
-                Despite your best efforts, the troll proves to be an unrelenting foe, its massive strength and resilience overwhelming your defenses. 
-                With each thunderous blow, you feel your strength waning, your body battered and bruised from the relentless assault.
-                The troll's fury knows no bounds, its relentless onslaught driving you to the brink of exhaustion.
-                With a final, bone-crushing blow, the troll delivers the decisive strike, sending you sprawling to the ground in defeat. 
-                As darkness closes in around you, you can only watch helplessly as the troll looms over you, its victorious roar echoing in the desolate wilderness.
-                You've died..
+                The lesser dragons prove to be more formidable opponents than you initially anticipated. 
+                Despite your best efforts to defend yourself, their coordinated attacks overwhelm you. 
+                Their sharp claws tear through your defenses, leaving deep gashes in your armor.
             </p>";
+            echo "<p>
+                As you struggle to keep up with their relentless onslaught, you find yourself outnumbered and outmatched. 
+                With each passing moment, your strength wanes, and the dragons press their advantage. 
+                Despite your best efforts to fight back, you ultimately succumb to their ferocity, collapsing to the ground in defeat.
+                With your vision growing dim, you watch helplessly as the lesser dragons circle around you, their triumphant roars echoing in your ears.
+            </p>";
+            echo "<p>You've died..</p>";
             echo"<img style='width:200px;length:100px' src='../../images/player/grave.png'>";
             saveCharacterStats('../../data.txt');
             echo"
                 <ul>
-                    <li><a href='../../index.php'>Create a new Character?</a></li>
+                <li><a href='../../index.php'>Create a new Character?</a></li>
                 </ul>
             ";
         }
@@ -67,20 +71,19 @@
         global $monster;
         echo"
         <div class='enemyStats tooltip'>
-                <img class='enemyAnim4' src='../../images/enemy/troll.jpg' style='width:200px;length:100px'alt='kobold picture'>
-                <div class='right'>
-                    <h2>".$monster['name']."</h2>
-                    <h5>
-                        With skin as tough as stone and muscles like coiled steel, trolls possess a resilience that belies their brutish appearance. 
-                        Their bodies, adorned with grotesque boils and scars, bear testament to the countless battles they have waged throughout the ages, each scar a mark of their indomitable strength and tenacity.
-                    </h5>
+            <img class='enemyAnim1' src='../../images/enemy/lesser_dragon.jpg' style='width:200px;length:150px'alt='lesser_dragon picture'>
+            <div class='right'>
+                <h2>Lesser Dragon</h2>
+                <h5>'Unlike their other kin, Lesser Dragons lack the intelligence that would qualify them as a sapient race. As such many other dragons view them no differently from other animals'</h5>
                     <p><img src='../../images/icons/hearts.png'>HP: ".$monster['hp']."/".$monster["maxHP"]."</p>
                     <p><img src='../../images/icons/katana.png'>Attack:".$monster['atk']."</p>
                     <p><img src='../../images/icons/shield.png'>Defense:".$monster['def']."</p>
                     <p><img src='../../images/icons/sprint.png'>Speed:".$monster['spd']."</p>
                     <p><img src='../../images/icons/medal-skull.png'>exp:".$monster['monExp']."</p>
-                </div>
             </div>
+        </div>
+        <img  class='enemyAnim' src='../../images/enemy/lesser_dragon.jpg' style='width:200px;length:150px'alt='lesser_dragon picture'>
+        <img  class='enemyAnim3' src='../../images/enemy/lesser_dragon.jpg' style='width:200px;length:150px;position:relative; left:70px;'alt='lesser_dragon picture'>
         ";
         echo"<h3> Battle Log: </h3>";
         $minimumDamage = 1;
@@ -96,13 +99,20 @@
                 echo "<p>".$_SESSION['player']['name']." attacks ".$monster['name']." for ".$playerDMG.". ".$monster['name']." HP: ".$monster['hp']."/".$monster['maxHP']."\n</p>";
                 if($monster['hp'] <= 0){
                     $winBattle = true;
-                    echo "<p>The ".$monster['name']." has died!\n</p>";
+                    echo "<p>One of the ".$monster['name']."s have died!\n</p>";
+                    echo "<p>The other ".$monster['name']."s realizing their outmatched retreat one by one!</p>";
                     break;
                 }
                 
                 $monDMG = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
                 $_SESSION['player']['hp'] -= round($monDMG);
                 echo "<p>".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
+                $monDMG2 = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
+                $_SESSION['player']['hp'] -= round($monDMG2);
+                echo "<p>The second ".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG2.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
+                $monDMG3 = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
+                $_SESSION['player']['hp'] -= round($monDMG3);
+                echo "<p>The third ".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG3.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
                 if($_SESSION['player']['hp'] <= 0){
                     $winBattle = false;
                     echo "<p>You've died..</p>";
@@ -114,6 +124,12 @@
                 $monDMG = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
                 $_SESSION['player']['hp'] -= round($monDMG);
                 echo "<p>".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
+                $monDMG2 = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
+                $_SESSION['player']['hp'] -= round($monDMG2);
+                echo "<p>The second ".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG2.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
+                $monDMG3 = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
+                $_SESSION['player']['hp'] -= round($monDMG3);
+                echo "<p>The third ".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG3.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
                 if($_SESSION['player']['hp'] <= 0){
                     $winBattle = false;
                     echo "<p>You've died..\n</p>";
@@ -126,6 +142,7 @@
                 if($monster['hp'] <= 0){
                     $winBattle = true;
                     echo "<p>The ".$monster['name']." has died!\n</p>";
+                    echo "<p>The other ".$monster['name']."s realizing their outmatched retreat one by one!</p>";
                     break;
                 }
             }
@@ -146,7 +163,7 @@
     <link rel="stylesheet" href="../../encountersAnimation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
-    <title>Troll Encounter</title>
+    <title>Lesser Dragon Encounter</title>
     <style>
         h2{
             font-family: 'Cardo';
@@ -162,41 +179,21 @@
     </div>
     <div class="box">
         <div class="battleBox">
-            <br>
             <h3>Encounter :</h3>
             <?= battle();?>
         </div>
-        <div class="textbox forest3">
-            <h2>Battle & Encounter with the Troll</h2>
-            <h4>
-                "While trolls are often depicted as brutish and aggressive, they possess a surprising depth of instincts honed by eons of existence in the untamed wilderness. 
-                Masters of their domain, trolls roam the rugged terrain of Termina with a silent, watchful vigilance, their presence serving as a warning to those who would dare challenge their authority."
-            </h4>
+        <div class="textbox peaks1">
+            <h2>Battle with the Lesser Dragons</h2>
             <h3>Battle Music:</h3>
             <audio controls loop autoplay>
                 <source src="../../music/sento.mp3" type="audio/mpeg">
             </audio>
-            
+    
             <p>
-                As Pog and the player step out of the cache, they are suddenly startled by a deep, rumbling growl echoing from the shadows. 
-                Emerging from the darkness comes a towering figure, its massive frame casting a long shadow over the barren landscape. 
-                With each heavy footfall, the ground trembles beneath its weight, announcing the arrival of a fearsome troll..
+                With a screeching roar, the lesser dragons launch their attack, their claws slashing through the air as they descend upon the player and Seiryu with ruthless ferocity. 
+                Caught off guard by the sudden onslaught, you react swiftly to defend yourself against the relentless assault of the creatures.
             </p>
-            <p>
-                The troll's skin is a sickly shade of blue, marred by grotesque boils and scars from countless battles past. 
-                Its eyes gleam with a primal intelligence, glinting with malice as it fixes its gaze upon Pog and the player.
-            </p>
-            <p>
-                Pog quips, "Well, ain't you a sight for sore eyes! Looks like someone's been playin' with fire and got burned a few too many times!" 
-                The troll's expression darkens at Pog's mockery, its temper flaring as it readies itself for combat.
-                "That there's a troll, mate. Big, dumb, and not too bright, but don't let that fool ya. They're tough as nails and meaner than a sack of rabid wolves. Best watch your back around this one."
-            </p>
-            <p>
-                As the troll charges forward with a thunderous roar, you stand your ground, your sword and shield at the ready. 
-                With lightning reflexes, you dodge its swinging club and retaliate with a swift strike, your blade finding purchase in its thick, gnarled hide.
-                The troll bellows in pain, but it is undeterred, launching a barrage of heavy blows in retaliation.
-            </p>
-            
+
             <?= outcome();?>
             
           
@@ -204,14 +201,13 @@
         <div class="stats">
             <?= showStats(); ?>
             <div class='enemyStats tooltip'>
-                <img class='enemyAnim3' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;length:50px'alt='kobold picture'>
+                <img class='enemyAnim3_2' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;length:50px'alt='pog picture'>
                 <div class='bottom'>
                     <h2>Pog</h2>
                     <h5>"A mysterious talking pot. He's guiding you to the Divine Dragonic Peaks but for what purpose?"</h5>
-                    <p>"You're not scared of that big lug, are ya? C'mon, show him what you're made of!"</p>
+                    <p>"Keep dodgin', mate! We've almost got 'im on the ropes!"</p>
                 </div>
             </div>
-
         </div>
     </div>
 </body>

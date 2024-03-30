@@ -70,12 +70,12 @@
                 "Ya see, mate," Pog begins, his eyes scanning the dense undergrowth for any signs of danger, "that troll back there wasn't always in such a sorry state. No, sir. 
                 He used to be a right proper guardian, he did. Protected that treasure cache like it was his own kin."
                 Pausing for a moment, Pog's gaze drifts to the flickering torchlight dancing upon the forest floor. "But then, one day, things took a turn for the worse. 
-                There was a confrontation, ya see. Between the troll and a fire dragon. If it wasn't for the dragon, the troll losing its composure, and you consuming those goodies, that last battle might not have ended very well for the both of us."
-                At the mention of the fire dragon, Pog's voice drops to a hushed whisper, as if afraid of attracting the attention of unseen ears. "The dragon, he... he badly burnt the troll, he did. Sent him scurrying off into the shadows like a frightened mouse. 
+                There was a confrontation, ya see. Between the troll and the dragon. If it wasn't for the dragon, the troll losing its composure, and you consuming those goodies, that last battle might not have ended very well for the both of us."
+                At the mention of the dragon, Pog's voice drops to a hushed whisper, as if afraid of attracting the attention of unseen ears. "The dragon, he... he badly burnt the troll, he did. Sent him scurrying off into the shadows like a frightened mouse. 
                 Poor bloke never stood a chance against the might of those flames."
             </p>
             <p>
-                "And that's not all," Pog continues, his voice trembling with a mixture of fear and anger. "The fire dragon, he... he raided the treasure cache. Looking for something, he was. Something he thought was his."
+                "And that's not all," Pog continues, his voice trembling with a mixture of fear and anger. "The dragon, he... he raided the treasure cache. Looking for something, he was. Something he thought was his."
                 Leaning in closer to the player, Pog's eyes gleam with a steely determination. "He took something from me, mate. Something I can't afford to lose. My orb. The key to everything. 
                 And I'll be damned if I let that scaly bastard get away with it."
             </p>
@@ -93,7 +93,7 @@
             <ul>
                 <li><a href="../encounters/koboldEncounter.php">Take the left fork.</a></li>
                 <br>
-                <li><a href="">Take the right fork.</a></li>
+                <li><a href="../encounters/">Take the right fork.</a></li>
             </ul>   
         </div>
         <div class="stats">
