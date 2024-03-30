@@ -35,6 +35,13 @@ body{
     background-size: cover;
 }
 
+.forest2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./images/background/forest2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .forest3{
     background-image: url(./images/background/Forest_background3.png);
     background-repeat: no-repeat;

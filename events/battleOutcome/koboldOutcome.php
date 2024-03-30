@@ -200,7 +200,7 @@
                 <img class='enemyAnim3_2' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;length:50px'alt='pog picture'>
                 <div class='bottom'>
                     <h2>Pog</h2>
-                    <h5>"A mysterious talking pot. He's guiding you to the Divine Dragonic Peaks but for what purpose?"</h5>
+                    <h5>"A mysterious talking pot. He's guiding you to the Divine Draconian Peaks but for what purpose?"</h5>
                     <p>"Keep dodgin', mate! We've almost got 'im on the ropes!"</p>
                 </div>
             </div>

@@ -207,7 +207,7 @@
                 <img class='enemyAnim3' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;length:50px'alt='kobold picture'>
                 <div class='bottom'>
                     <h2>Pog</h2>
-                    <h5>"A mysterious talking pot. He's guiding you to the Divine Dragonic Peaks but for what purpose?"</h5>
+                    <h5>"A mysterious talking pot. He's guiding you to the Divine Draconian Peaks but for what purpose?"</h5>
                     <p>"You're not scared of that big lug, are ya? C'mon, show him what you're made of!"</p>
                 </div>
             </div>

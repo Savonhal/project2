@@ -5,15 +5,16 @@
     require '../showStats2.php';
     require '../../game_logic/levelUp.php';
     require '../../game_logic/saveCharacterStats.php';
+    
 
     $monster = [
-        "name" => "Lesser Dragon",
-        "hp" => 100 + round($_SESSION['player']['atk']*.3),
-        "maxHP" => 100 + round($_SESSION['player']['atk']*.3),
-        "atk" => 50 + round($_SESSION['player']['atk']*.1),
-        "def" => 45 + round($_SESSION['player']['atk']*.2),
-        "spd" => 85 + round($_SESSION['player']['atk']*.6),
-        "monExp" => 320,
+        "name" => "Walking Bushes",
+        "hp" => 70 + round($_SESSION['player']['atk']*.3),
+        "maxHP" => 70 + round($_SESSION['player']['atk']*.3),
+        "atk" => 3 + round($_SESSION['player']['atk']*.3),
+        "def" => 15,
+        "spd" => 40,
+        "monExp" => 100,
     ];
 
     //TODO Create battle sequence
@@ -27,33 +28,27 @@
         global $monster;
         if($winBattle){
             //echo the scenarion of battle and how the player defeated the monster.
-            echo"<p>As you face off against the pack of lesser dragons, their reptilian eyes fixate on you with predatory intent. They move swiftly, darting in and out as they attempt to surround you. With each snarl, their sharp teeth glint in the sunlight, and their powerful wings create gusts of wind as they flap aggressively.</p>";
-            echo"<p>You manage to keep your cool, wielding your weapon with precision as you fend off their attacks. Dodging and weaving, you anticipate their movements, striking whenever you find an opening. Your strikes land true, causing the smaller dragons to recoil and hiss in pain.</p>";
-            echo"<p>Despite their ferocity, the lesser dragons begin to falter under your relentless assault. One by one, they retreat, sensing their imminent defeat. With a final, decisive blow, you dispatch the last remaining dragon, leaving the battlefield victorious.</p>";
-            echo"<p>Pog cheers triumphantly, clapping you on the back with a grin. \"Well done, mate! That's how you handle a couple of pesky kobolds! They won't be botherin' us again anytime soon, that's for sure!\"</p>";
+            echo"<p>With swift strikes and well-timed dodges, you manage to outmaneuver the animated shrubbery. Utilizing your skills and weapons effectively, you deal precise blows to each of the walking bushes, gradually wearing them down.</p>";
+            echo"<p>Pog, although unable to participate directly in the battle, offers strategic advice and encouragement from the sidelines. With his guidance and your determination, you successfully defeat the walking bushes. As the last bush collapses to the ground, its movements cease, and the forest falls silent once more.</p>";
+            echo"<p>With the threat neutralized, you and Pog take a moment to catch your breath, knowing that you've emerged victorious against the unusual foes.</p>";
+            echo"<p>Pog cheers triumphantly, clapping you on the back with a grin. \"Well done, mate! You gave those shrubbery a good ole' trimming! They won't be botherin' us again anytime soon, that's for sure!\"</p>";
             levelUp($monster['monExp']);
             levelUp($monster['monExp']);
-            levelUp($monster['monExp']);
+
             //echo where the player can go next
             echo"
                 <ul>
-                    <li><a href='../encounters/giantWormEncounter.php'>Continue exploring.</a></li>
+                    <li><a href='../encounters/treantEncounter.php'>Continue exploring.</a></li>
                 </ul>
             ";
         }else{
             //echo a description of how player was defeated/dead here
             echo"<p>
-                The lesser dragons prove to be more formidable opponents than you initially anticipated. 
-                Despite your best efforts to defend yourself, their coordinated attacks overwhelm you. 
-                Their sharp claws tear through your defenses, leaving deep gashes in your armor.
+                Despite your best efforts, the battle against the walking bushes takes a turn for the worse. The agile movements of the animated shrubbery prove difficult to anticipate, and their thorny attacks land with surprising force. 
+                As you struggle to fend off the relentless assault, you find yourself gradually overwhelmed by the sheer numbers and ferocity of the walking bushes.
+                In the end, despite your valiant efforts, the walking bushes prove too formidable.
+                You have died...
             </p>";
-            echo "<p>
-                As you struggle to keep up with their relentless onslaught, you find yourself outnumbered and outmatched. 
-                With each passing moment, your strength wanes, and the dragons press their advantage. 
-                Despite your best efforts to fight back, you ultimately succumb to their ferocity, collapsing to the ground in defeat.
-                With your vision growing dim, you watch helplessly as the lesser dragons circle around you, their triumphant roars echoing in your ears.
-            </p>";
-            echo "<p>You've died..</p>";
             echo"<img style='width:200px;length:100px' src='../../images/player/grave.png'>";
             saveCharacterStats('../../data.txt');
             echo"
@@ -70,20 +65,22 @@
         global $winBattle;
         global $monster;
         echo"
-        <div class='enemyStats tooltip'>
-            <img class='enemyAnim1' src='../../images/enemy/lesser_dragon.jpg' style='width:200px;length:150px'alt='lesser_dragon picture'>
-            <div class='right'>
-                <h2>Lesser Dragon</h2>
-                <h5>'Unlike their other kin, Lesser Dragons lack the intelligence that would qualify them as a sapient race. As such many other dragons view them no differently from other animals'</h5>
-                    <p><img src='../../images/icons/hearts.png'>HP: ".$monster['hp']."/".$monster["maxHP"]."</p>
-                    <p><img src='../../images/icons/katana.png'>Attack:".$monster['atk']."</p>
-                    <p><img src='../../images/icons/shield.png'>Defense:".$monster['def']."</p>
-                    <p><img src='../../images/icons/sprint.png'>Speed:".$monster['spd']."</p>
-                    <p><img src='../../images/icons/medal-skull.png'>exp:".$monster['monExp']."</p>
+            <div class='enemyStats tooltip'>
+                    <img class='enemyAnim3'src='../../images/enemy/walkingBush.jpg' style='width:200px;length:100px'alt='bush picture'>
+                    <div class='right'>
+                        <h2>".$monster['name']."</h2>
+                        <h5>
+                            'Strange plants that posses the ability to walk. 
+                             Unlike other living plants like carnivorous man-eating plants, these plants lack a mouth and are surprisingly agile.'
+                        </h5>
+                        <p><img src='../../images/icons/hearts.png'>HP: ".$monster['hp']."/".$monster["maxHP"]."</p>
+                        <p><img src='../../images/icons/katana.png'>Attack:".$monster['atk']."</p>
+                        <p><img src='../../images/icons/shield.png'>Defense:".$monster['def']."</p>
+                        <p><img src='../../images/icons/sprint.png'>Speed:".$monster['spd']."</p>
+                        <p><img src='../../images/icons/medal-skull.png'>exp:".$monster['monExp']."</p>
+                    </div>
             </div>
-        </div>
-        <img  class='enemyAnim' src='../../images/enemy/lesser_dragon.jpg' style='width:200px;length:150px'alt='lesser_dragon picture'>
-        <img  class='enemyAnim3' src='../../images/enemy/lesser_dragon.jpg' style='width:200px;length:150px;position:relative; left:70px;'alt='lesser_dragon picture'>
+            <img class='enemyAnim3'src='../../images/enemy/walkingBush.jpg' style='width:200px;length:100px'alt='bush picture'>
         ";
         echo"<h3> Battle Log: </h3>";
         $minimumDamage = 1;
@@ -100,7 +97,7 @@
                 if($monster['hp'] <= 0){
                     $winBattle = true;
                     echo "<p>One of the ".$monster['name']."s have died!\n</p>";
-                    echo "<p>The other ".$monster['name']."s realizing their outmatched retreat one by one!</p>";
+                    echo "<p>The other ".$monster['name']." was struck at the same time and died!</p>";
                     break;
                 }
                 
@@ -110,9 +107,6 @@
                 $monDMG2 = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
                 $_SESSION['player']['hp'] -= round($monDMG2);
                 echo "<p>The second ".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG2.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
-                $monDMG3 = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
-                $_SESSION['player']['hp'] -= round($monDMG3);
-                echo "<p>The third ".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG3.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
                 if($_SESSION['player']['hp'] <= 0){
                     $winBattle = false;
                     echo "<p>You've died..</p>";
@@ -127,9 +121,6 @@
                 $monDMG2 = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
                 $_SESSION['player']['hp'] -= round($monDMG2);
                 echo "<p>The second ".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG2.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
-                $monDMG3 = round(($monster['atk'] + rand(1, 6)) * (100/(100+$_SESSION['player']['def'])), 0);
-                $_SESSION['player']['hp'] -= round($monDMG3);
-                echo "<p>The third ".$monster['name']." counters ".$_SESSION['player']['name']." for ".$monDMG3.". ".$_SESSION['player']['name']." HP: ".$_SESSION['player']['hp']."/".$_SESSION['player']['maxHP']."\n</p>";
                 if($_SESSION['player']['hp'] <= 0){
                     $winBattle = false;
                     echo "<p>You've died..\n</p>";
@@ -142,7 +133,7 @@
                 if($monster['hp'] <= 0){
                     $winBattle = true;
                     echo "<p>The ".$monster['name']." has died!\n</p>";
-                    echo "<p>The other ".$monster['name']."s realizing their outmatched retreat one by one!</p>";
+                    echo "<p>The other ".$monster['name']." was struck at the same time and died!</p>";
                     break;
                 }
             }
@@ -163,7 +154,7 @@
     <link rel="stylesheet" href="../../encountersAnimation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
-    <title>Lesser Dragon Encounter</title>
+    <title>Walking Bush Encounter</title>
     <style>
         h2{
             font-family: 'Cardo';
@@ -182,20 +173,21 @@
             <h3>Encounter :</h3>
             <?= battle();?>
         </div>
-        <div class="textbox peaks1">
-            <h2>Battle with the Lesser Dragons</h2>
+        <div class="textbox forest2">
+            <h2>Battle with the WAlking Bushes</h2>
             <h3>Battle Music:</h3>
             <audio controls loop autoplay>
                 <source src="../../music/sento.mp3" type="audio/mpeg">
             </audio>
-            <h4>
-                "Their intelligence, while limited compared to other dragons, is nonetheless keen enough to recognize threats and devise simple strategies to overcome them. They are cunning hunters, capable of tracking prey across vast distances and coordinating attacks with their brethren."
-            </h4>
+    
             <p>
-                With a screeching roar, the lesser dragons launch their attack, their claws slashing through the air as they descend upon the player and Seiryu with ruthless ferocity. 
-                Caught off guard by the sudden onslaught, you react swiftly to defend yourself against the relentless assault of the creatures.
+                The walking bushes sway ominously, their thorny limbs poised for attack, while the walking root inches closer, its tangled mass writhing with malicious intent.
+                Reacting swiftly, you draw your weapon and brace yourself for battle. With a determined glare, you charge forward, aiming to strike down the nearest walking bush before it can retaliate. 
+                Your blade slices through the foliage, but the resilient plant creature continues its advance, its thorns grazing your skin.
             </p>
-
+            <p>
+                With each strike, you chip away at the plant creatures' defenses, but they prove to be resilient adversaries, fueled by an otherworldly vitality.
+            </p>
             <?= outcome();?>
             
           
@@ -206,7 +198,7 @@
                 <img class='enemyAnim3_2' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;length:50px'alt='pog picture'>
                 <div class='bottom'>
                     <h2>Pog</h2>
-                    <h5>"A mysterious talking pot. He's guiding you to the Divine Dragonic Peaks but for what purpose?"</h5>
+                    <h5>"A mysterious talking pot. He's guiding you to the Divine Draconian Peaks but for what purpose?"</h5>
                     <p>"Keep dodgin', mate! We've almost got 'im on the ropes!"</p>
                 </div>
             </div>

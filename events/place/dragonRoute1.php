@@ -93,7 +93,7 @@
             <ul>
                 <li><a href="../encounters/koboldEncounter.php">Take the left fork.</a></li>
                 <br>
-                <li><a href="../encounters/">Take the right fork.</a></li>
+                <li><a href="../encounters/livingPlantsEncounter.php">Take the right fork.</a></li>
             </ul>   
         </div>
         <div class="stats">
