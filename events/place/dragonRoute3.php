@@ -50,7 +50,7 @@
             <p>"It seems like Pog's orb is a key to undoing his transformation and returning his powers but wasn't it a Demon God who stole the orb?"</p>
         </div>
 
-        <div class="textbox forest1">
+        <div class="textbox forest2">
             <h2>To the Divine Draconian Peaks: Draconian Woodlands (P3)</h2>
             <h2>The Truth</h2>
             <h4>

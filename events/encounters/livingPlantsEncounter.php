@@ -36,7 +36,7 @@
         echo'<p>
             Among living plant species, walking bushes possess the most complex method of locomotion. 
             With their canine like legs, these bushes can easily traverse their environment in search of nutrient dense areas to root themselves in. 
-            Due to their efficiency and speed, their kind is rarely seen moving about unless the area they are is devoid of life and nutrients. 
+            Due to their efficiency and speed, their kind is rarely seen moving about unless the area they are in is devoid of life and nutrients. 
             There are accounts where walking bushes will actively attempt to hunt prey if they are desperate enough for nutrition.
         </p>';
         echo'<p>
@@ -56,7 +56,7 @@
     <link rel="stylesheet" href="../../encountersAnimation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
-    <title>Kobold Encounter</title>
+    <title>Walking Bush Encounter</title>
     <style>
         h2{
             font-family: 'Cardo';
@@ -98,8 +98,7 @@
             </p>
             <p>
                 As you cautiously approach, the creatures suddenly spring to life, their limbs lashing out with surprising speed and agility.
-                "I've seen my fair share of oddities in these woods, but walking bushes and roots? That's a new one."
-                As the living plant creatures spring into action, Pog's eyes widen in surprise and concern. "Well, this is unexpected," he mutters, shifting his stance to prepare for the coming onslaught. 
+                Pog's eyes widen in surprise and concern. "Well, this is unexpected," he mutters, shifting his stance to prepare for the coming onslaught. 
                 "I've seen my fair share of oddities in these woods, but walking bushes and roots? That's a new one." 
             </p>
             

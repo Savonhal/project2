@@ -37,13 +37,13 @@
         <div class="battleBox ">
             <h3> Emissaries of the Woods: Aria and Elara</h3>
            
-            <div style='displaye:flex'>
+            <div style='display:flex'>
                 <div class='enemyStats tooltip'>
                     <img class='enemyAnim1' src="../../images/encounters/Aria.png" style='width:200px;' alt="undying mage">
                     <div class='bottom' style='top: 175px; left: 100px;'>
                         <h2>Aria</h2>
                         <h5>"Emissary of the Lord of the Woods"</h5>
-                        <p>"The right hand fae of the Lord of the Woods. She is responsible for many tasks in and out of HavenWood."</p>
+                        <p>"The right hand fae of the Lord of the Woods. She is responsible for many tasks in and out of Havenwood."</p>
                     </div>
                 </div>
                 <div class='enemyStats tooltip'>

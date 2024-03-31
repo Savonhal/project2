@@ -154,7 +154,7 @@
     <link rel="stylesheet" href="../../encountersAnimation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
-    <title>Walking Bush Encounter</title>
+    <title>Walking Bush Battle</title>
     <style>
         h2{
             font-family: 'Cardo';
@@ -174,7 +174,7 @@
             <?= battle();?>
         </div>
         <div class="textbox forest2">
-            <h2>Battle with the WAlking Bushes</h2>
+            <h2>Battle with the Walking Bushes</h2>
             <h3>Battle Music:</h3>
             <audio controls loop autoplay>
                 <source src="../../music/sento.mp3" type="audio/mpeg">

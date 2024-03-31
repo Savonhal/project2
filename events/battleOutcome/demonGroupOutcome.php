@@ -125,7 +125,7 @@
             //echo where the player can go next
             echo"
                 <ul>
-                    <li><a href='../place'>As the dust settles, the two figures turn to you and introduces themselves.</a></li>
+                    <li><a href='../place/dragonRoute2_2B.php'>As the dust settles, the two figures turn to you and introduces themselves.</a></li>
                 </ul>
             ";
         }else{

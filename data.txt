@@ -207,5 +207,16 @@
         "exp": 0,
         "expThreshold": 100,
         "maxHP": 195
+    },
+    {
+        "name": "Link",
+        "hp": -30,
+        "atk": 26,
+        "def": 33,
+        "spd": 58,
+        "lvl": 1,
+        "exp": 0,
+        "expThreshold": 100,
+        "maxHP": 174
     }
 ]
