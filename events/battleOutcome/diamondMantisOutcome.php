@@ -12,7 +12,7 @@
         "atk" => 70,
         "def" => 80,
         "spd" => 65,
-        "monExp" => 1500,
+        "monExp" => rand(1500,4000),
     ];
     //TODO Create battle sequence
     // Roll dice, loop or both?

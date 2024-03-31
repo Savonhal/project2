@@ -39,7 +39,7 @@
            
             <div style='displaye:flex'>
                 <div class='enemyStats tooltip'>
-                    <img class='enemyAnim1' src="../../images/encounters/Aria.jpg" style='width:200px;' alt="undying mage">
+                    <img class='enemyAnim1' src="../../images/encounters/Aria.png" style='width:200px;' alt="undying mage">
                     <div class='bottom' style='top: 175px; left: 100px;'>
                         <h2>Aria</h2>
                         <h5>"Emissary of the Lord of the Woods"</h5>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class='enemyStats tooltip'>
-                    <img src="../../images/encounters/Elara.jpg" style='width:200px;' alt="undying mage">
+                    <img src="../../images/encounters/Elara.png" style='width:200px;' alt="undying mage">
                     <div class='bottom' style='top: 175px; left: 100px;'>
                         <h2>Elara</h2>
                         <h5>"Attendant of Aria"</h5>

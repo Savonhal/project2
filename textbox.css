@@ -63,6 +63,13 @@ body{
     background-size: cover;
 }
 
+.ghost_town{
+    background-image: url(./images/background/ghost_town.png);
+    background-repeat: no-repeat;
+    background-position: right-top;
+    background-size: cover;
+}
+
 .forest_opening{
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(./images/background/forest_opening.jpg);
     background-repeat: no-repeat;

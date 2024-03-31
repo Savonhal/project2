@@ -51,7 +51,6 @@
             <p>"With your current strength, hunting down one Oni might be doable but two? We might need to take a step back and make a plan..." - Pog</p>         
         </div>
         <div class="textbox ghost_town">
-            
             <h2>To the Divine Draconian Peaks: Draconian Woodlands (P2: Route 2)</h2>
             <h2>Old Havenwood</h2>
             <h4>
@@ -62,24 +61,27 @@
             <audio controls loop autoplay>
                 <source src='../../music/yonseinomissa.mp3'>
             </audio>
+            <h4>After The Battle with the Merged Hell</h4>
             <p>
-                As you and Pog step through the barrier into Old Havenwood, a palpable sense of unease washes over you. The once vibrant village now lies in ruin, its dilapidated buildings shrouded in shadow and decay. Twisted vines snake their way through crumbling walls, and the air is heavy with the musty scent of ancient decay.
+                As the last wisp of the Merged Hell dissipates into the ether, leaving behind an eerie silence in its wake, Pog's eyes narrow as he observes you with a newfound intensity. He scratches his chin, the clinking of his ceramic form echoing softly in the quiet aftermath of the battle.
             <p>
-                Old Havenwood unfolds before you like a dark, twisted tapestry woven from nightmares.
-                The houses of Old Havenwood stand as hollow shells, their windows gaping like empty eye sockets, and their doors hanging askew on rusted hinges. Faded remnants of life linger in the air, a haunting echo of the village's former inhabitants. Ghostly whispers drift on the wind, carrying fragmented memories of laughter and sorrow.
-                Shadows dance and sway with unnatural movements, casting sinister shapes upon the decaying structures.
-                The cobblestone streets, once bustling with life, now echo with the haunting whispers of the past. A cold chill settles over the abandoned streets, seeping into your bones and sending shivers down your spine. The faint rustle of dead leaves echoes through the eerie stillness, accompanied by the distant creaking of ancient branches. 
-                Every step forward feels like a descent into madness, as if the very fabric of reality is unraveling around you. Every creak of a floorboard, every rustle of leaves sends shivers down your spine, as if unseen eyes are watching your every move.
+                "Well, well, well," he muses, his voice tinged with a mix of curiosity and something akin to admiration. "Looks like you've been holding back on me, haven't you?"
+                You shoot him a puzzled look, asking him what he means.
             </p>
             <p>
-                The silence is oppressive, broken only by the occasional mournful howl of the wind. You can almost feel the weight of the sorrow that still lingers in the air pressing down upon you, it's as though the very essence of despair has seeped into the cracks of every building, staining everything it touches. It's as if the village itself is holding its breath, waiting for something... or someone.
+                Pog gestures emphatically toward you, his tone taking on a note of excitement. "I mean, did you feel that? Every time we take down one of these nasties, you're getting stronger. It's like you're soaking up their essence or somethin'."
+            </p>
+            <p>
+                You take a moment to process his words, considering the implications of what he's saying. It's true that you've felt a surge of energy coursing through you with each battle, but you hadn't paid much attention to it until now.
+            </p>
+            <p>
+                Pog nods, his eyes alight with a newfound determination. "Well, whatever it is, we'll need every advantage we can get if we're going to face those dragons on the Divine Draconian Peaks. And if that means you're becoming a bit of a powerhouse, then so be it."
+            </p>
+            <p>
+                Pog chuckles, the tension of battle momentarily forgotten. "That's the spirit, mate. Now, let's see what else this forsaken place has in store for us." With renewed resolve, you and Pog press onward, searching for the pair of Oni brothers responsible for this town's state.
             </p>
             
-            <p>
-                As you navigate the labyrinthine streets, a sense of dread gnaws at the edges of your consciousness. Every corner turned brings the possibility of encountering something unspeakable lurking in the shadows.
-            </p>
-            
-            <a href='../encounters/specterEncounter.php'><p>Then suddenly....</p></a>
+            <a href='../encounters/demonGroupEncounter.php'><p>Continue your hunt</p></a>
         </div>
         
         <div class="stats">
@@ -89,7 +91,7 @@
                 <div class='bottom'>
                     <h2>Pog</h2>
                     <h5>"A mysterious talking pot. He's guiding you to the Divine Draconian Peaks but for what purpose?"</h5>
-                    <p>"Ughh I can feel it. This place is oozing with the supernatural. Keep your guard up mate, it seems likes we got more things to worry about then a pair of oni."</p>
+                    <p>"You've been getting stronger mate buts it a good thing if it means we can fight with the dragons on the Divine Draconian Peaks."</p>
                 </div>
             </div>
         </div>

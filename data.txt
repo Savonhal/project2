@@ -130,5 +130,82 @@
         "exp": 56,
         "expThreshold": 144,
         "maxHP": 257
+    },
+    {
+        "name": "Hero 3",
+        "hp": -4,
+        "atk": 32,
+        "def": 51,
+        "spd": 59,
+        "lvl": 1,
+        "exp": 0,
+        "expThreshold": 100,
+        "maxHP": 171
+    },
+    {
+        "name": "Eleven",
+        "hp": -17,
+        "atk": 55,
+        "def": 57,
+        "spd": 52,
+        "lvl": 5,
+        "exp": 183.20000000000002,
+        "expThreshold": 172.79999999999998,
+        "maxHP": 256
+    },
+    {
+        "name": "Twelve",
+        "hp": -11,
+        "atk": 27,
+        "def": 56,
+        "spd": 55,
+        "lvl": 1,
+        "exp": 0,
+        "expThreshold": 100,
+        "maxHP": 186
+    },
+    {
+        "name": "Thirteen",
+        "hp": -15,
+        "atk": 72,
+        "def": 64,
+        "spd": 60,
+        "lvl": 5,
+        "exp": 183.20000000000002,
+        "expThreshold": 172.79999999999998,
+        "maxHP": 220
+    },
+    {
+        "name": "Jack",
+        "hp": -11,
+        "atk": 68,
+        "def": 53,
+        "spd": 58,
+        "lvl": 5,
+        "exp": 183.20000000000002,
+        "expThreshold": 172.79999999999998,
+        "maxHP": 232
+    },
+    {
+        "name": "Tim",
+        "hp": -7,
+        "atk": 12,
+        "def": 11,
+        "spd": 12,
+        "lvl": 1,
+        "exp": 0,
+        "expThreshold": 100,
+        "maxHP": 100
+    },
+    {
+        "name": "Edward",
+        "hp": -4,
+        "atk": 28,
+        "def": 32,
+        "spd": 45,
+        "lvl": 1,
+        "exp": 0,
+        "expThreshold": 100,
+        "maxHP": 195
     }
 ]

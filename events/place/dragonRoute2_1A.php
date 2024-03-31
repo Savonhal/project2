@@ -34,6 +34,7 @@
     </div>
     <div class="box">
         <div class="battleBox ">
+        <h2>To the Divine Draconian Peaks: Draconian Woodlands (P2: Route 1)</h2>
             <h3> New Havenwood Settlement</h3>
            
             <p>
@@ -46,7 +47,7 @@
                 Their unique magic, knowledge, and perspective have contributed much to Havenwood's community since their arrival form the underworld. 
                 "Their arrival only warranted the destuction of Old Havenwood" a common sentiment shared amongst the few who hold prejudice against them.
             </p>
-            <div style='displaye:flex'>
+            <div style='display:flex'>
                 <img class='enemyAnim1' src="../../images/encounters/undying_mage.jpg" style='width:200px;length:100px' alt="undying mage">
                 <img src="../../images/encounters/undying_alchemist.jpg" style='width:200px;length:100px' alt="undying mage">
             </div>

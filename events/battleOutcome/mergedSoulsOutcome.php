@@ -6,15 +6,14 @@
     require '../../game_logic/saveCharacterStats.php';
 
     $monster = [
-        "name" => "Troll",
-        "hp" => 150,
-        "maxHP" => 150,
-        "atk" => 40,
-        "def" => 45,
-        "spd" => 2,
-        "monExp" => rand(200,300),
+        "name" => "Merged Hell",
+        "hp" => 150 + round($_SESSION['player']['atk']*.3),
+        "maxHP" => 150 + round($_SESSION['player']['atk']*.3),
+        "atk" => 45 + round($_SESSION['player']['atk']*.3),
+        "def" => 100 + round($_SESSION['player']['atk']*.3),
+        "spd" => 35,
+        "monExp" => rand(300,400),
     ];
-
     //TODO Create battle sequence
     // Roll dice, loop or both?
     
@@ -26,10 +25,7 @@
         global $monster;
         if($winBattle){
             //echo the scenarion of battle and how the player defeated the monster.
-            echo"<p>You dance around its attacks, using your agility to outmaneuver the lumbering beast while delivering precise strikes to its vulnerable points.</p>";
-            echo"<p>With each exchange, the troll's strength begins to wane, its movements growing sluggish from the relentless assault. Sensing an opening, you unleash a flurry of strikes, each blow driving the creature closer to defeat.</p>";
-            echo"<p>Finally, with a mighty swing of your sword, you deliver the decisive blow, cleaving through the troll's thick neck with a resounding crack. With a deafening roar, the creature collapses to the ground, defeated at last.</p>";
-            echo"<p></p>";
+            echo"<p>As the battle reaches its climax, you unleash a barrage of attacks against the Merged Hell, your efforts driving the malevolent entity back with each passing moment. With a final, decisive blow, you strike a fatal blow against the swirling mass of souls, dispersing its essence into the ether with a deafening roar.</p>";
             echo"<p></p>";
             levelUp($monster['monExp']);
 
@@ -37,17 +33,14 @@
             //echo where the player can go next
             echo"
                 <ul>
-                    <li><a href='../place/dragonRoute1.php'>Make your way to the Draconian Woodlands</a></li>
+                    <li><a href='../place/dragonRoute2_2A.php'>You continue on your journey</a></li>
                 </ul>
             ";
         }else{
             //echo a description of how player was defeated/dead here
             echo"<p>
-                Despite your best efforts, the troll proves to be an unrelenting foe, its massive strength and resilience overwhelming your defenses. 
-                With each thunderous blow, you feel your strength waning, your body battered and bruised from the relentless assault.
-                The troll's fury knows no bounds, its relentless onslaught driving you to the brink of exhaustion.
-                With a final, bone-crushing blow, the troll delivers the decisive strike, sending you sprawling to the ground in defeat. 
-                As darkness closes in around you, you can only watch helplessly as the troll looms over you, its victorious roar echoing in the desolate wilderness.
+                As the battle against the Merged Hell rages on, you and Pog find yourselves pushed to your limits, your strength flagging under the relentless assault of the malevolent entity. 
+                Despite your best efforts, the sheer magnitude of the Merged Hell's power proves to be too much to overcome, and you soon find yourselves overwhelmed by its relentless onslaught.
                 You've died..
             </p>";
             echo"<img style='width:200px;length:100px' src='../../images/player/grave.png'>";
@@ -67,12 +60,13 @@
         global $monster;
         echo"
         <div class='enemyStats tooltip'>
-                <img class='enemyAnim4' src='../../images/enemy/troll.jpg' style='width:200px;length:100px'alt='kobold picture'>
+            <img class='enemyAnim1'src='../../images/enemy/merged_hell.jpg' style='width:259px;length:150px'alt='worm picture'>
                 <div class='right'>
                     <h2>".$monster['name']."</h2>
                     <h5>
-                        With skin as tough as stone and muscles like coiled steel, trolls possess a resilience that belies their brutish appearance. 
-                        Their bodies, adorned with grotesque boils and scars, bear testament to the countless battles they have waged throughout the ages, each scar a mark of their indomitable strength and tenacity.
+                    'A being composed of rotting specters with lingering negative emotions who have all merged in order to relieve their loneliness. They soon form a negative cycle of cursing each other thus making them more deadlier as time goes one. 
+                    
+                    '
                     </h5>
                     <p><img src='../../images/icons/hearts.png'>HP: ".$monster['hp']."/".$monster["maxHP"]."</p>
                     <p><img src='../../images/icons/katana.png'>Attack:".$monster['atk']."</p>
@@ -146,7 +140,7 @@
     <link rel="stylesheet" href="../../encountersAnimation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
-    <title>Troll Encounter</title>
+    <title>Battle with Merged Hell</title>
     <style>
         h2{
             font-family: 'Cardo';
@@ -164,38 +158,32 @@
         <div class="battleBox">
             <br>
             <h3>Encounter :</h3>
+            <br>
             <?= battle();?>
         </div>
-        <div class="textbox forest3">
-            <h2>Battle & Encounter with the Troll</h2>
+        <div class="textbox ghost_town">
+            <h2>Battle with the Merged Hell</h2>
+            <h4>Old Havenwood</h4>
             <h4>
-                "While trolls are often depicted as brutish and aggressive, they possess a surprising depth of instincts honed by eons of existence in the untamed wilderness. 
-                Masters of their domain, trolls roam the rugged terrain of Termina with a silent, watchful vigilance, their presence serving as a warning to those who would dare challenge their authority."
+               "Nestled within the depths of the Draconian Woodlands, Old Havenwood was once a thriving settlement teeming with life and vibrancy.
+               Now, Old Havenwood stands as a haunting reminder of its former glory, its once bustling streets now overgrown with tangled vines and creeping ivy. The echoes of laughter and song have long since faded, replaced by an eerie silence broken only by the whispering winds and the occasional murmuring of the undead."
             </h4>
             <h3>Battle Music:</h3>
             <audio controls loop autoplay>
-                <source src="../../music/sento.mp3" type="audio/mpeg">
+                <source src="../../music/boss_battle/raiu.mp3" type="audio/mpeg">
             </audio>
             
             <p>
-                As Pog and the player step out of the cache, they are suddenly startled by a deep, rumbling growl echoing from the shadows. 
-                Emerging from the darkness comes a towering figure, its massive frame casting a long shadow over the barren landscape. 
-                With each heavy footfall, the ground trembles beneath its weight, announcing the arrival of a fearsome troll..
+                As you were ruminating on your thoughts after the specters, Pog's voice cuts through the eerie silence, his words tinged with apprehension. "Oi, mate, looks like we've got ourselves a bit of a situation," he says, gesturing towards the swirling mass of souls that looms before you.
+                You follow Pog's gaze and feel a chill run down your spine as you behold the grotesque spectacle before you. The mass of writhing specters coalesce into a towering monstrosity, its form shifting and contorting with each passing moment.
             </p>
             <p>
-                The troll's skin is a sickly shade of blue, marred by grotesque boils and scars from countless battles past. 
-                Its eyes gleam with a primal intelligence, glinting with malice as it fixes its gaze upon Pog and the player.
+                "This ain't lookin' too good, mate," Pog mutters, his eyes fixed on the swirling mass of souls before you. "That there's the Merged Hell—a foul creature born from the misery and despair of lost souls. Looks like these specters done merged together to form one big, angry spirit."
             </p>
             <p>
-                Pog quips, "Well, ain't you a sight for sore eyes! Looks like someone's been playin' with fire and got burned a few too many times!" 
-                The troll's expression darkens at Pog's mockery, its temper flaring as it readies itself for combat.
-                "That there's a troll, mate. Big, dumb, and not too bright, but don't let that fool ya. They're tough as nails and meaner than a sack of rabid wolves. Best watch your back around this one."
+                Before you can react, the amorphous mass of souls coalesces into a towering monstrosity, its form twisted and contorted by the agony of countless tormented spirits. With a deafening roar, the Merged Hell looms over you and Pog, its spectral tendrils writhing hungrily as it prepares to unleash its wrath upon you.
             </p>
-            <p>
-                As the troll charges forward with a thunderous roar, you stand your ground, your sword and shield at the ready. 
-                With lightning reflexes, you dodge its swinging club and retaliate with a swift strike, your blade finding purchase in its thick, gnarled hide.
-                The troll bellows in pain, but it is undeterred, launching a barrage of heavy blows in retaliation.
-            </p>
+            
             
             <?= outcome();?>
             
@@ -207,8 +195,8 @@
                 <img class='enemyAnim3' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;length:50px'alt='kobold picture'>
                 <div class='bottom'>
                     <h2>Pog</h2>
-                    <h5>"A mysterious talking pot. He's guiding you to the Divine Draconian Peaks but for what purpose?"</h5>
-                    <p>"You're not scared of that big lug, are ya? C'mon, show him what you're made of!"</p>
+                    <h5>"A mysterious talking pot. He's guiding you to the Divine Dragonic Peaks but for what purpose?"</h5>
+                    <p>"Keep your guard up, mate! These spirits ain't playin' around!"</p>
                 </div>
             </div>
 

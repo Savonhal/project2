@@ -8,7 +8,7 @@
     
 
     $monster = [
-        "name" => "Walking Bushes",
+        "name" => "Walking Bush",
         "hp" => 70 + round($_SESSION['player']['atk']*.3),
         "maxHP" => 70 + round($_SESSION['player']['atk']*.3),
         "atk" => 3 + round($_SESSION['player']['atk']*.3),
@@ -97,7 +97,7 @@
                 if($monster['hp'] <= 0){
                     $winBattle = true;
                     echo "<p>One of the ".$monster['name']."s have died!\n</p>";
-                    echo "<p>The other ".$monster['name']." was struck at the same time and died!</p>";
+                    echo "<p>The other ".$monster['name']." was scared off!</p>";
                     break;
                 }
                 
@@ -133,7 +133,7 @@
                 if($monster['hp'] <= 0){
                     $winBattle = true;
                     echo "<p>The ".$monster['name']." has died!\n</p>";
-                    echo "<p>The other ".$monster['name']." was struck at the same time and died!</p>";
+                    echo "<p>The other ".$monster['name']." was scared off!</p>";
                     break;
                 }
             }

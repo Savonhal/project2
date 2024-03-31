@@ -60,7 +60,7 @@
             </h4>
             <h3>Music:</h3>
             <audio controls loop autoplay>
-                <source src='../../music/suitekinoodori.mp3'>
+                <source src='../../music/seishishitauchu.mp3'>
             </audio>
             <p>
                 You and Pog decide to go to the right.
@@ -86,10 +86,10 @@
                 "I cannot simply allow passage through the seal," Oakheart rumbles, its voice tinged with concern. "The barrier exists to contain the darkness within Old Havenwood. To breach it would risk unleashing danger upon the Draconian woodlands."
                 You and Pog exchange glances, understanding the gravity of the situation. But before you can respond, Oakheart peers deeply into your souls, its ancient gaze probing your very essence.
                 After a moment of contemplation, the treant speaks again, its voice softer now. "If it is you who seeks passage, then perhaps there is hope yet. Your souls resonate with a strength and purity that I have not sensed in eons. 
-                Especially yours talking pot Pog. It reminds me of someone but I can't put by branch on it."
+                As for yours talking pot Pog, it reminds me of someone but I can't put my branch on it..."
             </p>
             <p>
-                Pog nods in agreement, his expression resolute. "We'll take on the Oni brothers, Oakheart. Count on it."
+                Before Oakenheart could ruminate on his thoughts, Pog nods in agreement and quickly changes the subject. "We'll take on the Oni brothers, Oakheart. Count on it."
                 With a solemn nod, Oakheart relents, its branches parting to reveal the shimmering barrier of magic. "Very well," it intones. "Pass through the seal, but know that the path ahead will be fraught with peril. May your courage and determination light the way."
             </p>
             <p>
