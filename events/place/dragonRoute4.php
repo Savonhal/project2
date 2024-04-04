@@ -58,7 +58,11 @@
             <h2>To the Divine Draconian Peaks: Out of the Draconian Wood Lands (P4)</h2>
             <h2>A Journey to the Peaks</h2>
             <h4>
-               
+                The Divine Draconian Peaks rise majestically from the earth, their towering forms reaching towards the heavens with an awe-inspiring grandeur. 
+                Jagged cliffs of rugged stone jut out from the verdant landscape below, their sheer faces weathered by the passage of time and the elements. 
+                Tendrils of mist cling to the slopes, swirling in ghostly wisps around the ancient peaks like ethereal guardians of the realm.
+                The slopes of the peaks are cloaked in a tapestry of emerald foliage, dotted with cascading waterfalls that tumble down into hidden grottos below. 
+                Thick forests cling to the mountainsides, their vibrant hues a stark contrast to the stark stone that forms the backbone of the peaks.
             </h4>
             <h3>Music:</h3>
             <audio controls loop autoplay>

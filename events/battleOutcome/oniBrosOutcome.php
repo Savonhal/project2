@@ -85,7 +85,7 @@
             echo"<p>Aria, noticing an opportunity, unleashed a barrage of ethereal bolts of light, her magic striking true and momentarily driving back the Oni brothers. Elara, her healing magic flowing forth in a torrent of radiant energy, worked tirelessly to mend your group's wounds and bolster their resolve.</p>";
             echo"<p>As the battle reached its climax, you noticed a weakness in Akuma's defenses. With a quick nod to Aria, you devised a plan to exploit this vulnerability, coordinating your attacks with precision timing.</p>";
             echo"<p>With Aria's magic blazing brighter than ever, her ethereal bolts of light raining down upon the Oni brothers with relentless fury, you seized the moment to strike. Channeling all your strength and skill into a single devastating blow, you unleashed a powerful flurry of strikes against Akuma, catching him off guard and driving him to his knees.</p>";
-            echo"<p>.Seeing his brother falter, Yuki hesitated for just a moment, his concentration wavering as doubt crept into his mind. Sensing an opportunity, Elara unleashed a surge of healing magic, revitalizing your group and imbuing them with renewed vigor.</p>";
+            echo"<p>Seeing his brother falter, Yuki hesitated for just a moment, his concentration wavering as doubt crept into his mind. Sensing an opportunity, Elara unleashed a surge of healing magic, revitalizing your group and imbuing them with renewed vigor.</p>";
             echo"<p>With one final, coordinated assault, you and your companions overwhelmed Yuki, driving him back with relentlessly without giving him time to cast his magic, until he, too, lay defeated at your feet.</p>";
             echo"<p>The Oni brothers, once fearsome adversaries, now lay defeated and broken, their reign of terror brought to an end by your groups unwavering determination and spirit.</p>";
             echo"<p>With the oni brothers vanquished, the barrier surrounding Old Havenwood slowly dissipates.</p>";
@@ -335,7 +335,7 @@
         <div class="stats">
             <?= showStats(); ?>
             <div class='enemyStats tooltip'>
-                <img class='pogSerious' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;length:50px'alt='kobold picture'>
+                <img class='pog' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;length:50px'alt='kobold picture'>
                 <div class='bottom'>
                     <h2>Pog</h2>
                     <h5>"A mysterious talking pot. He's guiding you to the Divine Draconian Peaks but for what purpose?"</h5>

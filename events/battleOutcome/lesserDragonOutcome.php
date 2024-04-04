@@ -30,14 +30,14 @@
             echo"<p>As you face off against the pack of lesser dragons, their reptilian eyes fixate on you with predatory intent. They move swiftly, darting in and out as they attempt to surround you. With each snarl, their sharp teeth glint in the sunlight, and their powerful wings create gusts of wind as they flap aggressively.</p>";
             echo"<p>You manage to keep your cool, wielding your weapon with precision as you fend off their attacks. Dodging and weaving, you anticipate their movements, striking whenever you find an opening. Your strikes land true, causing the smaller dragons to recoil and hiss in pain.</p>";
             echo"<p>Despite their ferocity, the lesser dragons begin to falter under your relentless assault. One by one, they retreat, sensing their imminent defeat. With a final, decisive blow, you dispatch the last remaining dragon, leaving the battlefield victorious.</p>";
-            echo"<p>Pog cheers triumphantly, clapping you on the back with a grin. \"Well done, mate! That's how you handle a couple of pesky kobolds! They won't be botherin' us again anytime soon, that's for sure!\"</p>";
+            echo"<p>Pog cheers triumphantly, clapping you on the back with a grin. \"Well done, mate! They won't be botherin' us again anytime soon, that's for sure!\"</p>";
             levelUp($monster['monExp']);
             levelUp($monster['monExp']);
             levelUp($monster['monExp']);
             //echo where the player can go next
             echo"
                 <ul>
-                    <li><a href='../encounters/giantWormEncounter.php'>Continue exploring.</a></li>
+                    <li><a href='../place/dragonRoute5.php'>Continue exploring.</a></li>
                 </ul>
             ";
         }else{
@@ -205,8 +205,12 @@
             <div class='enemyStats tooltip'>
                 <img class='enemyAnim3_2' src='../../images/encounters/Pot of Cavil A.png' style='width:100px;length:50px'alt='pog picture'>
                 <div class='bottom'>
-                    <h2>Pog</h2>
-                    <h5>"A mysterious talking pot. He's guiding you to the Divine Dragonic Peaks but for what purpose?"</h5>
+                    <h2>Pog(<span class="divine">Seiryu</span>)</h2>
+                    <h5>"Celestial Dragon Seiryu, Guardian of the Divine Draconian Peaks. 
+                        He serves his lord, the Dragon God Bahamut, and protects the realm of the Divine Draconian Peaks alongside its other guardians.
+                        After returning from the Divine Convention and parting ways with his lord, a rebellion sparked and forces Seiryu to make an ultimatum.
+                        He shoulders the weight of his decision to this very day."
+                    </h5>
                     <p>"Keep dodgin', mate! We've almost got 'im on the ropes!"</p>
                 </div>
             </div>
