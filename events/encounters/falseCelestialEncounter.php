@@ -82,7 +82,7 @@
             
         </div>
         <div class="textbox peaks1">
-            <h2>To the Divine Draconian Peaks: On the Divine Draconian Peaks (BOSS)</h2>
+            <h2>On the Divine Draconian Peaks (BOSS)</h2>
             <h2>BOSS ENCOUNTER:</h2>
             <h2><span class="boss">The False Celestial, Illuyanka</span></h2>
             <h3>Music:</h3>

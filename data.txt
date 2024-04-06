@@ -218,5 +218,16 @@
         "exp": 0,
         "expThreshold": 100,
         "maxHP": 174
+    },
+    {
+        "name": "Dat 2",
+        "hp": 1530,
+        "atk": 608,
+        "def": 554,
+        "spd": 658,
+        "lvl": 18,
+        "exp": 0,
+        "expThreshold": 1848.842588950363,
+        "maxHP": 1530
     }
 ]

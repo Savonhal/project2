@@ -53,7 +53,7 @@
         
         </div>
         <div class="textbox peaks1">
-            <h2>To the Divine Draconian Peaks: On the Divine Draconian Peaks (P4)</h2>
+            <h2>On the Divine Draconian Peaks (P5)</h2>
             <h2>A Journey to retrieve the Orb</h2>
             <h4>
                 The Divine Draconian Peaks rise majestically from the earth, their towering forms reaching towards the heavens with an awe-inspiring grandeur. 

@@ -74,7 +74,7 @@
                 The first, adorned with delicate wings that shimmer with an ethereal glow with hues of dark purple and blue, steps gracefully into view. Her voice carries a haunting melody as she introduces herself, "I am Aria, an emissary of the lord of the forest," her words echoing with an melancholic grace.
                 Beside her, the other figure, cloaked in an aura of serenity, speaks next, "And I am Elara, a mere attendant to her emissary," her voice soft yet firm, a testament to her unwavering resolve.
             <p>
-                With Aria and Elara's introductions complete, they reveal the purpose of their presence. "We were sent by the Lord of the Forest," Aria begins, her voice carrying a weight of solemnity, "at the request of Oakenheart." Elara nods in agreement, her expression serene yet resolute.
+                With Aria and Elara's introductions complete, they reveal the purpose of their presence. "We were sent by the Lord of the Forest, at the request of Oakenheart." Aria begins, her voice carrying a weight of solemnity.
             </p>
             <p>
                 "After sending you and Pog into the barrier surrounding Old Havenwood, Oakenheart realized where he recognized Pog," Aria explains, her gaze thoughtful. "He then contacted the Lord of the Woods to send us as emissaries, to aid you both in your endeavors."

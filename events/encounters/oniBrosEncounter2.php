@@ -171,7 +171,7 @@
                 "And if these outsiders are important enough to warrant their protection, then they must possess something of value to us."
             </p>
             <p>
-                Aria, the fairy, bristled at the sight of the Oni brothers adn their remarks. "We won't let you harm anyone else. Your reign of terror ends here!" she declared defiantly, her voice ringing out clear and unwavering despite the tension in the air.
+                Aria, the fairy, bristled at the sight of the Oni brothers and their remarks. "We won't let you harm anyone else. Your reign of terror ends here!" she declared defiantly, her voice ringing out clear and unwavering despite the tension in the air.
                 Elara, her expression solemn, added, "You bring only suffering and destruction. It's time to put an end to it."
             </p>
 

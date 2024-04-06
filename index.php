@@ -54,13 +54,16 @@
                     As civilizations rise and fall, their beliefs and ideologies take root in this ethereal realm, giving rise to gods and entities that embody the essence of their faith.
                 </p>
                 <p>
-                    At the heart of Termina lies the protagonist, an enigmatic entity whose true nature remains veiled in secrecy until the culmination of their journey. 
+                    At the heart of Termina lies the protagonist, an enigmatic entity whose true nature remains veiled in secrecy until they reach the end of their journey. 
                 </p>
                 <br>
                 <h1>How do I play the game?</h1>
-                <p>Enter a name and hit the submit button to start. Your decisions in the game affect your journey in Termina and its outcome.</p>
+                <p>Enter a name and hit the submit button to start. Your decisions in the game can affect your journey in Termina and its outcome.</p>
+                <p>The game has a heavy amount of story and lore.</p>
+                <p>You can enable autoplay for sound on your browser to increase immersion.</p>
                 <p>Hovering over enemies and allies can give you information such as lore and stats.</p>
                 <p>The game contains a leveling system and stats that'll affect battles and progression. Battling is automatically done for you.</p>
+                <p>Stats are randomized during character creation and their growth is randomized during level ups.</p>
                 <h2> What do stats do? </h2>
                 <ul>
                     <li>LVL: Your level; an indicator for your general strength and aptitude in battle. Increasing your LVL also increases your Max Health, Attack, Defense, and Speed. It will also heal you completely.</li>
@@ -71,11 +74,12 @@
                     <li>Speed: Determines who will go first every turn in battle.</li>
                 </ul>
                 <h1>What are the outcomes of the game?</h1>
-                <p>The game has basically two routes (general stories) each of which is randomized when you start the game. You can refresh the explore.php page if you want to change your route.</p>
+                <p>The game has two routes (general stories) each with their own events that will eventually converge into a single route again.</p>
+                <p>You get to pick the route when you reach a fork in the road in the Draconian woodlands.</p>
                 <h2>Routes</h2>
                 <ul>
-                    <li>Adventure to Divine Draconian Peaks(Encounter with Pog and the treasure cache)</li>
-                    <li>The Otherside of Termina (Encounter with Specter) </li>
+                    <li>Left: New Havenwood and the Diamond Mantis</li>
+                    <li>Right: Old Havenwood and the Oni Brothers, Akuma and Yuki </li>
                 </ul>
             </div>
         </div>

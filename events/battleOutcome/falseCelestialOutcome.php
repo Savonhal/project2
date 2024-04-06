@@ -74,10 +74,10 @@
                 echo"<p>With a sudden leap and a heavy swing, the stranger soon met Illuyanka's attack with their own, stopping the False Celestial Dragon right in its track.</p>";
                 echo"<p>
                     A brilliant ball of purple and blue can be seen radiating from the Divine Draconian Peaks and in its epicenter, two figures can be seen in a fierce stalemate. 
-                    Illuyanka's body could barely hold on as the immense force produced in the clash threatened to wipe the whole peak away and the stranger grimaced in pain as the resulting collision was also painful for them.
+                    Illuyanka's body could barely hold on as the immense force produced in the clash threatened to wipe the whole peak away and the stranger grimaced in pain as the resulting collision was also strenuous for them.
                 </p>";
                 echo"<p>\"Now!\", stranger yelled still holding on to their staff as they bare the full force of Illuyanka's suicidal attack.</p>";
-                echo"<p>Finally, with a final, decisive blow, you strike down the Illuyanka, sending his body crashing to the ground. His form flickers and fade as the divine energy from within his body start to consume him. 
+                echo"<p>Finally, with a final, decisive blow, you strike down Illuyanka, sending his body crashing to the ground. His form flickers and fade as the divine energy from within his body start to consume him. 
                      As the thunder storm subsides and skies begin to clear, you turn to the stranger and ask who they are.</p>";
             }
            
@@ -121,7 +121,7 @@
             if($userRoll >= $monsterRoll){
                 //Player attacks monster first
                 $playerDMG = round(($_SESSION['player']['atk'] + rand(1, 6)) * (100/(100+$monster['def'])) ,0);
-                $sansaraDMG = round(($_SESSION['player']['atk']*1.5 + rand(10, 20)) * (100/(100+$monster['def'])) ,0);
+                $sansaraDMG = round(($_SESSION['player']['atk']*2 + rand(10, 20)) * (100/(100+$monster['def'])) ,0);
                 
                 
                 if($monster['hp'] > 0){
@@ -193,7 +193,7 @@
                 
                 //player attacks second
                 $playerDMG = round(($_SESSION['player']['atk'] + rand(1, 6)) * (100/(100+$monster['def'])) ,0);
-                $sansaraDMG = round(($_SESSION['player']['atk']*1.5 + rand(10, 20)) * (100/(100+$monster['def'])) ,0);
+                $sansaraDMG = round(($_SESSION['player']['atk']*2 + rand(10, 20)) * (100/(100+$monster['def'])) ,0);;
                 
                 
                 if($monster['hp'] > 0){
@@ -253,7 +253,7 @@
             <?= battle() ?>
         </div>
         <div class="textbox peaks1">
-            <h2>To the Divine Draconian Peaks: On the Divine Draconian Peaks (BOSS)</h2>
+            <h2>On the Divine Draconian Peaks (BOSS)</h2>
             <h2>BOSS ENCOUNTER:</h2>
             <h2><span class="boss">The False Celestial, Illuyanka</span></h2>
             <h3>Music:</h3>

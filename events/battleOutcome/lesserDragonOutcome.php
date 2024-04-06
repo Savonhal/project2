@@ -163,7 +163,7 @@
     <link rel="stylesheet" href="../../encountersAnimation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
-    <title>Lesser Dragon Encounter</title>
+    <title>Lesser Dragon Battle</title>
     <style>
         h2{
             font-family: 'Cardo';
