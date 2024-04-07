@@ -223,3 +223,28 @@ body{
         text-shadow: 0 0 1px gold;
     }
 }
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+    border: 3px solid gray;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+audio {
+    width: 275px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 30px;
+    box-shadow: 5px;
+}

@@ -44,7 +44,7 @@ foreach ($user_matches as $match) {
     echo '<tr>';
     echo '<td>' . $match['name'] . '</td>';
     echo '<td>' . $match['lvl'] . '</td>';
-    echo '<td>' . $match['exp'] . '</td>';
+    echo '<td>' . round($match['exp']) . '</td>'; 
     echo '<td>' . $match['maxHP'] . '</td>';
     echo '<td>' . $match['hp'] . '</td>';
     echo '<td>' . $match['atk'] . '</td>';

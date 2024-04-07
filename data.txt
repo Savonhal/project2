@@ -11,17 +11,6 @@
         "spd": 12
     },
     {
-        "name": "Kamrul",
-        "lvl": 1,
-        "exp": 0,
-        "expThreshold": 100,
-        "maxHP": 100,
-        "hp": 100,
-        "atk": 7,
-        "def": 10,
-        "spd": 9
-    },
-    {
         "name": "Dat",
         "lvl": 1,
         "exp": 0,
@@ -45,28 +34,6 @@
     },
     {
         "name": "Player1",
-        "lvl": 4,
-        "exp": 100,
-        "expThreshold": 100,
-        "maxHP": 100,
-        "hp": 100,
-        "atk": 11,
-        "def": 7,
-        "spd": 8
-    },
-    {
-        "name": "Player1",
-        "lvl": 7,
-        "exp": 300,
-        "expThreshold": 100,
-        "maxHP": 100,
-        "hp": 100,
-        "atk": 11,
-        "def": 7,
-        "spd": 8
-    },
-    {
-        "name": "Player1",
         "lvl": 10,
         "exp": 500,
         "expThreshold": 100,
@@ -78,17 +45,6 @@
     },
     {
         "name": "Hero",
-        "hp": -42,
-        "atk": 54,
-        "def": 58,
-        "spd": 31,
-        "lvl": 1,
-        "exp": 0,
-        "expThreshold": 100,
-        "maxHP": 152
-    },
-    {
-        "name": "Hero",
         "hp": 0,
         "atk": 33,
         "def": 57,
@@ -97,28 +53,6 @@
         "exp": 0,
         "expThreshold": 100,
         "maxHP": 161
-    },
-    {
-        "name": "Hero",
-        "hp": -23,
-        "atk": 30,
-        "def": 25,
-        "spd": 56,
-        "lvl": 1,
-        "exp": 0,
-        "expThreshold": 100,
-        "maxHP": 186
-    },
-    {
-        "name": null,
-        "hp": -2,
-        "atk": 26,
-        "def": 44,
-        "spd": 58,
-        "lvl": 1,
-        "exp": 0,
-        "expThreshold": 100,
-        "maxHP": 175
     },
     {
         "name": "Hero 2",
@@ -229,5 +163,27 @@
         "exp": 0,
         "expThreshold": 1848.842588950363,
         "maxHP": 1530
+    },
+    {
+        "name": "Tiger Woods",
+        "lvl": 4,
+        "exp": 111,
+        "expThreshold": 144,
+        "maxHP": 212,
+        "hp": -20,
+        "atk": 53,
+        "def": 41,
+        "spd": 66
+    },
+    {
+        "name": "Kamrul",
+        "lvl": 15,
+        "exp": 474.5676772556824,
+        "expThreshold": 1069.9320537907195,
+        "maxHP": 633,
+        "hp": 633,
+        "atk": 239,
+        "def": 216,
+        "spd": 268
     }
 ]

@@ -30,13 +30,8 @@
     </div>
     <div class="box termina" style="margin-left: 20%">
         <div class="leaderBoard">
-
-
-            <h2>LeaderBoard</h2>
+            <h2 style="margin-bottom: -10px;">LeaderBoard</h2>
             <?php include 'leaderBoard.php'?>
-
-
-
         </div>
         <div class="textbox void">
             <div class="intro">
