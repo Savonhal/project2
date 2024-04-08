@@ -61,7 +61,7 @@
                 <p>Stats are randomized during character creation and their growth is randomized during level ups.</p>
                 <h2> What do stats do? </h2>
                 <ul>
-                    <li>LVL: Your level; an indicator for your general strength and aptitude in battle. Increasing your LVL also increases your Max Health, Attack, Defense, and Speed. It will also heal you completely.</li>
+                    <li>LVL: Your level; an indicator for your general strength and aptitude in battle. Increasing your LVL also increases your Max Health, Attack, Defense, and Speed. It will also heal you.</li>
                     <li>EXP: Experience; is needed to increase your LVL.</li>
                     <li>HP: Your health points; if your HP decreases to 0 or below you'll die.</li>
                     <li>Attack: Determines how much base damage you'll deal against enemies. </li>
