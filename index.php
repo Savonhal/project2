@@ -28,7 +28,7 @@
             <input type="submit" value="Submit Name">
         </form>
     </div>
-    <div class="box termina" style="margin-left: 20%">
+    <div class="box termina" >
         <div class="leaderBoard">
             <h2 style="margin-bottom: -10px;">LeaderBoard</h2>
             <?php include 'leaderBoard.php'?>
